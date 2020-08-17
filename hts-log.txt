@@ -1,0 +1,51 @@
+HTTrack3.48-19+htsswf+htsjava launched on Sat, 15 Aug 2020 09:26:10 at http://kodeforest.net/html/books/store/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F  -%F  -%l "en, *" http://kodeforest.net/html/books/store/index.html -O1 "C:\My Web Sites\guoapplications" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:30:00	Warning: 	file not stored in cache due to bogus state (broken size, expected 2005900 got 1310720): kodeforest.net/html/books/store/images/banner-1.png
+09:30:00	Warning: 	file not stored in cache due to bogus state (broken size, expected 1672057 got 1310720): kodeforest.net/html/books/store/images/banner-2.png
+09:30:01	Warning: 	file not stored in cache due to bogus state (broken size, expected 1823881 got 1310720): kodeforest.net/html/books/store/images/banner-3.png
+09:33:55	Warning: 	file not stored in cache due to bogus state (broken size, expected 2016063 got 1310720): kodeforest.net/html/books/store/images/top-categories-bg.png
+09:35:05	Warning: 	Retry after error -4 (No data (connection closed)) at link kodeforest.net/html/books/store/css/jquery.bxslider.css (from kodeforest.net/html/books/store/index.html)
+09:47:43	Warning: 	Retry after error -4 (Incorrect length (1310720 Bytes, 2005900 expected)) at link kodeforest.net/html/books/store/images/banner-1.png (from kodeforest.net/html/books/store/index.html)
+09:47:44	Warning: 	Retry after error -4 (Incorrect length (1310720 Bytes, 1672057 expected)) at link kodeforest.net/html/books/store/images/banner-2.png (from kodeforest.net/html/books/store/index.html)
+09:47:45	Warning: 	Retry after error -4 (Incorrect length (1310720 Bytes, 1823881 expected)) at link kodeforest.net/html/books/store/images/banner-3.png (from kodeforest.net/html/books/store/index.html)
+09:47:54	Warning: 	Retry after error -2 (Receive Time Out) at link kodeforest.net/html/books/store/images/video-bg.png (from kodeforest.net/html/books/store/style.css)
+09:48:42	Warning: 	Retry after error -4 (Incorrect length (1310720 Bytes, 2016063 expected)) at link kodeforest.net/html/books/store/images/top-categories-bg.png (from kodeforest.net/html/books/store/style.css)
+09:49:09	Warning: 	Retry after error -4 (No data (connection closed)) at link kodeforest.net/html/books/store/css/jquery.bxslider.css (from kodeforest.net/html/books/store/index.html)
+09:49:10	Warning: 	Retry after error -4 (Incorrect length (76218 Bytes, 236187 expected)) at link kodeforest.net/html/books/store/images/about-img2.png (from kodeforest.net/html/books/store/about-us.html)
+09:49:34	Warning: 	Retry after error -4 (Incorrect length (74748 Bytes, 296906 expected)) at link kodeforest.net/html/books/store/images/blog-single5.png (from kodeforest.net/html/books/store/blog.html)
+09:49:35	Warning: 	Retry after error -2 (Receive Time Out) at link kodeforest.net/html/books/store/images/blog-single6.png (from kodeforest.net/html/books/store/blog.html)
+09:49:35	Warning: 	Retry after error -2 (Receive Time Out) at link kodeforest.net/html/books/store/images/blog-single7.png (from kodeforest.net/html/books/store/blog.html)
+09:49:39	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/writer2.png (from kodeforest.net/html/books/store/blog-full.html)
+09:49:41	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/blog-img5.png (from kodeforest.net/html/books/store/blog-full.html)
+09:49:47	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/writer3.png (from kodeforest.net/html/books/store/blog-full.html)
+09:49:50	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/blog-img8.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:10	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/writer.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:10	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/blog-img6.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:13	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/writer4.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:15	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/blog-img7.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:28	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/post-avaitar.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:30	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/instagram1.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:33	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/instagram2.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:35	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/instagram3.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:38	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/instagram4.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:40	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/add.png (from kodeforest.net/html/books/store/blog-full.html)
+09:50:41	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/blog-detail-img.png (from kodeforest.net/html/books/store/blog-detail.html)
+09:50:43	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/user1.png (from kodeforest.net/html/books/store/blog-detail.html)
+09:50:46	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/author14.png (from kodeforest.net/html/books/store/blog-detail.html)
+09:50:49	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/author15.png (from kodeforest.net/html/books/store/blog-detail.html)
+09:50:56	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/author4.png (from kodeforest.net/html/books/store/authors.html)
+09:50:57	Warning: 	Retry after error -4 (Connect Error) at link kodeforest.net/html/books/store/images/author5.png (from kodeforest.net/html/books/store/authors.html)
+09:51:27	Warning: 	Retry after error -4 (Incorrect length (75468 Bytes, 254698 expected)) at link kodeforest.net/html/books/store/images/author9.png (from kodeforest.net/html/books/store/authors.html)
+09:51:33	Warning: 	Retry after error -4 (Incorrect length (122026 Bytes, 276811 expected)) at link kodeforest.net/html/books/store/images/blog-img8.png (from kodeforest.net/html/books/store/blog-full.html)
+09:51:35	Warning: 	Retry after error -4 (Incorrect length (307396 Bytes, 390504 expected)) at link kodeforest.net/html/books/store/images/blog-img7.png (from kodeforest.net/html/books/store/blog-full.html)
+09:51:54	Warning: 	Retry after error -4 (No data (connection closed)) at link kodeforest.net/html/books/store/images/author14.png (from kodeforest.net/html/books/store/blog-detail.html)
+09:51:54	Error: 	"Not Found" (404) at link kodeforest.net/html/books/store/css/grabbing.png (from kodeforest.net/html/books/store/css/owl.carousel.css)
+
+HTTrack Website Copier/3.48-19 mirror complete in 25 minutes 54 seconds : 200 links scanned, 163 files written (26435906 bytes overall) [26475573 bytes received at 17037 bytes/sec], 8044 bytes transferred using HTTP compression in 1 files, ratio 32%, 1.2 requests per connection
+(1 errors, 39 warnings, 0 messages)
