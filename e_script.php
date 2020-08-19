@@ -10,5 +10,10 @@
 <script src="js/dl-menu/jquery.dlmenu.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/functions.js"></script>
+<script src="js/toast/jquery.toast.js"></script>
+<script src="js/guoClasses/basicClasses.js"></script>
+<script src="js/guoClasses/postRequest.js"></script>
+<script src="js/guoClasses/getRequest.js"></script>
+
 </body>
 </html>

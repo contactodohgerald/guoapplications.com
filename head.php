@@ -3,7 +3,9 @@ $siteName = 'GỤỌ';
 $siteMail = 'support@guoapplications.com';
 $sitePhone = '+234 803 861 9711';
 $domain = 'guoapplications.com/';
-$siteAddress = 'Enugu, Nigeria'
+$siteAddress = 'Enugu, Nigeria';
+$playStore = '#';
+$appleUrl = '#';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,6 +56,8 @@ $siteAddress = 'Enugu, Nigeria'
     <link href="js/dl-menu/component.css" rel="stylesheet">
 
     <link href="css/shortcode.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/toast/jquery.toast.css">
 
     <!-- Favicon -->
     <link rel="icon" href="images/logo/favicon.png">

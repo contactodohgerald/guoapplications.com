@@ -53,10 +53,10 @@
                             <a href="contact_us">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#">Login</a>
+                            <a href="login">Sign In</a>
                         </li>
                         <li class="last">
-                            <a href="#" style="color:#f05a23; font-weight: bold; text-transform: uppercase; font-size: 20px">Sign Up</a>
+                            <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -73,10 +73,10 @@
                             <a href="contact_us">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#">Login</a>
+                            <a href="login">Sign In</a>
                         </li>
                         <li class="last">
-                            <a href="#" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
+                            <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
                         </li>
                     </ul>
                 </div>
