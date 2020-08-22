@@ -284,8 +284,11 @@
                                 <input id="password-confirm" class="form-control password_confirmation" type="password" placeholder="Enter your confirm password">
                                 <div class="password_confirmation" hidden></div>
                             </div>
+                            <div class="col-md-12 form-group">
+                                <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
+                            </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="registerUser()">SignUp</button>
+                                <button class="guoBtn" type="submit" onclick="registerUser()">Sign Up</button>
                             </div>
                         </div>
                     </div>

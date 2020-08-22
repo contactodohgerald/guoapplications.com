@@ -1,11 +1,12 @@
 <?php
-$siteName = 'GỤỌ';
+$siteName = 'GỤỌ ';
 $siteMail = 'support@guoapplications.com';
 $sitePhone = '+234 803 861 9711';
 $domain = 'guoapplications.com/';
 $siteAddress = 'Enugu, Nigeria';
 $playStore = '#';
 $appleUrl = '#';
+$slogan = 'Read & Listen to Success';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,6 +62,7 @@ $appleUrl = '#';
 
     <!-- Favicon -->
     <link rel="icon" href="images/logo/favicon.png">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

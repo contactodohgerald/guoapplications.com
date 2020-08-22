@@ -36,6 +36,9 @@
                                 <div class="col-md-12">
                                     <textarea name="message" required></textarea>
                                 </div>
+                                <div class="col-md-12 form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
+                                </div>
                                 <div class="col-md-12">
                                     <button type="submit" name="submit">Send Message</button>
                                 </div>

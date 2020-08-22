@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Download <?php print  @$siteName?> and open the doors of fun and knowledge</h2>
-                <p style="color: #ffffff;">Visit either the Google PlayStore or Apple Appstore to download the <?php print  @$siteName?> app. </p>
+                <p style="color: #ffffff;">Visit Google PlayStore or Apple App Store to download the <?php print  @$siteName?> app. </p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-6">
                 <a href="<?php print  @$playStore?>">

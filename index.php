@@ -10,8 +10,8 @@
                 <img src="images/banner-1.png" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h3>Read and Listen to Success</h3>
-                    <p>Are you reading for fun or have an exam that you want to pass with flying colors? Or maybe you just want to acquire knowledge. <br>Make GỤỌ your gateway to it all and have fun doing so.</p>
+                    <h3><?php print  @$slogan?></h3>
+                    <p>Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make GỤỌ your gateway to it all and have fun doing so.</p>
                     <!--<div class="input-container">
                         <input type="text" placeholder="Enter Your Book Title Here">
                         <button><i class="fa fa-search"></i></button>
@@ -22,7 +22,7 @@
                 <img src="images/banner-2.png" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h3>Read and Listen to Success</h3>
+                    <h3><?php print  @$slogan?></h3>
                     <p>Download <?php print  @$siteName?> App for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
                     <!--<div class="input-container">
                         <input type="text" placeholder="Enter Your Book Title Here">
@@ -34,8 +34,8 @@
                 <img src="images/banner-3.png" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h3>Read and Listen to Success</h3>
-                    <p>After registration, you will be logged in to <?php print  @$siteName?> to start experiencing our numerous smart and <br>user-friendly features that would blow your mind!</p>
+                    <h3><?php print  @$slogan?></h3>
+                    <p> Sign up with GỤỌ to start experiencing the fun and knowledge through our numerous smart and user-friendly features that would blow your mind!</p>
                    <!-- <div class="input-container">
                         <input type="text" placeholder="Enter Your Book Title Here">
                         <button><i class="fa fa-search"></i></button>
@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <h2>Download <?php print  @$siteName?> and open the doors of fun and knowledge</h2>
-                    <p>Visit either the Google PlayStore or Apple Appstore to download the <?php print  @$siteName?> app. </p>
+                    <p>Visit Google PlayStore or Apple App Store to download the <?php print  @$siteName?>  app. </p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <a href="<?php print  @$playStore?>">
@@ -75,7 +75,7 @@
                 <!--SECTION CONTENT START-->
                 <div class="section-content">
                     <h2>Getting Started With <span><?php print @$siteName?> </span> app</h2>
-                    <p>Are you reading for fun or have an exam that you want to pass with flying colors? Or maybe you just want to acquire knowledge. Make GỤỌ your gateway to it all and have fun doing so.</p>
+                    <p> Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make <?php print @$siteName?> your gateway to it all and have fun doing so.</p>
                 </div>
                 <!--SECTION CONTENT END-->
                 <div class="row">
@@ -83,21 +83,21 @@
                         <div class="kode-service orangeText">
                             <i class="fa fa-gift"></i>
                             <h3><a href="#">Download The App</a></h3>
-                            <p>Visit either the AppStore or PlayStore to download the <?php print @$siteName?> app, and install it to your device.</p>
+                            <p>Visit Google PlayStore or Apple App Store to download and install <?php print @$siteName?> to your device. </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-book"></i>
-                            <h3><a href="#">Register</a></h3>
-                            <p>Register a <?php print @$siteName?> account with easy basic steps, in other to enjoy our smart features.</p>
+                            <h3><a href="#">Sign Up</a></h3>
+                            <p>Sign up with <?php print @$siteName?> in a simple, easy form and navigate our smart, user-friendly features.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-calculator"></i>
                             <h3><a href="#">Start Using</a></h3>
-                            <p>Log in to the <?php print @$siteName?> and you can start browsing through numerous smart features that would blow your mind</p>
+                            <p>Now you are in <?php print @$siteName?>, start browsing through numerous textbooks, exam materials and fun books that will blow your mind</p>
                         </div>
                     </div>
                 </div>
@@ -111,19 +111,19 @@
                     <div class="col-md-4">
                         <div class="count-up">
                             <span class="counter circle">15</span>
-                            <p>Books To Read From</p>
+                            <p>MOST POPULAR DOWNLOAD </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="count-up">
                             <span class="counter circle">589</span>
-                            <p>Author's To Read From</p>
+                            <p>TOTAL DOWNLOADS </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="count-up">
-                            <span class="counter circle">1250</span>
-                            <p>Best Authors</p>
+                            <span class="counter circle">125</span>
+                            <p>TOTAL AUTHORS</p>
                         </div>
                     </div>
                 </div>

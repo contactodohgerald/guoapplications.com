@@ -6,7 +6,7 @@
             <div class="col-md-4">
                 <div class="widget widget-text">
                     <h2>Contact Us</h2>
-                    <p> <?php print  @$siteName?> is there to make learning a breeze by letting you learn at your convenience</p>
+                    <p> <?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience</p>
                     <ul>
                         <li><i class="fa fa-tags"></i><p><?php print  @$siteAddress?></p></li>
                         <li><i class="fa fa-phone"></i><p><?php print  @$sitePhone?></p></li>
@@ -43,7 +43,7 @@
             <div class="col-md-4">
                 <div class="widget widget-newletter">
                     <h2>Newsletter</h2>
-                    <p>Stay updated with <?php print  @$siteName?> on all the happenings as we give you nothing but the best</p>
+                    <p> Subscribe today to get the latest textbooks, exam materials, fun books and features in <?php print  @$siteName?></p>
                     <form action="#" method="post">
                         <input type="email" placeholder="E-mail ID" name="email" required>
                         <button type="submit" name="submit">Subscribe</button>

@@ -32,7 +32,7 @@
                                 <div class="password" hidden></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="loginUser()">Verify Email</button>
+                                <button class="guoBtn" type="submit" onclick="loginUser()">Sign In</button>
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,24 @@
+async function sendMe(){
+    let secretKey, respond;
+
+    secretKey = "6LeUp8EZAAAAAHLFQ_zUlP2IhwcqL4_UMgu7aQP1";
+
+    respond = $("#g-recaptcha-response").val();
+
+    if (respond === ""){
+        NeededModules.showSuccessToaster('Please Check The reCAPTCHA box', 'warning');
+        return ;
+    }
+
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/verifyUserRecaptcha', {secretKey:secretKey, respond:respond});
+
+    let {success} = thePostData;
+
+    return  success;
+}
+
+
+
 async function registerUser() {
 
     let firstName, lastName, email, adminType, phone, country, password, passwordConfirmation, Phone, code;
@@ -60,21 +81,29 @@ async function registerUser() {
         code = `${phoneCode}${phone}`;
     }
 
-    NeededModules.bringOutLoader();
-    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register', {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, user_type:adminType});
-    let {status, error_statement, success_message} = thePostData;
+    let reCAPTCHA = sendMe();
 
-    if (status === false) {
-        NeededModules.removeLoader();
-        NeededModules.handleErrorStatement(error_statement);
-    }
+    if (reCAPTCHA === true){
 
-    if (status === true){
-        NeededModules.removeLoader();
-        NeededModules.showSuccessToaster(success_message, 'success');
-        setTimeout(function () {
-            window.location.href = Routes.emailVerify+`?email=${email}`;
-        }, 2000)
+        NeededModules.bringOutLoader();
+        let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register', {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, user_type:adminType});
+        let {status, error_statement, success_message} = thePostData;
+
+        if (status === false) {
+            NeededModules.removeLoader();
+            NeededModules.handleErrorStatement(error_statement);
+        }
+
+        if (status === true){
+            NeededModules.removeLoader();
+            NeededModules.showSuccessToaster(success_message, 'success');
+            setTimeout(function () {
+                window.location.href = Routes.emailVerify+`?email=${email}`;
+            }, 2000)
+        }
+
+    }else {
+        NeededModules.showSuccessToaster('You Are a Robot', 'warning');
     }
 }
 
