@@ -17,8 +17,6 @@ async function sendMe(){
     return  success;
 }
 
-
-
 async function registerUser() {
 
     let firstName, lastName, email, adminType, phone, country, password, passwordConfirmation, Phone, code;
@@ -83,6 +81,11 @@ async function registerUser() {
 
     let reCAPTCHA = sendMe();
 
+    if (reCAPTCHA === false){
+        NeededModules.showSuccessToaster('There Was An Error', 'warning');
+        return ;
+    }
+
     if (reCAPTCHA === true){
 
         NeededModules.bringOutLoader();
@@ -102,8 +105,6 @@ async function registerUser() {
             }, 2000)
         }
 
-    }else {
-        NeededModules.showSuccessToaster('You Are a Robot', 'warning');
     }
 }
 
