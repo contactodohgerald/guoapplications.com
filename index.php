@@ -10,7 +10,7 @@
                 <img src="images/banner-1.png" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h3><?php print  @$slogan?></h3>
+                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
                     <p>Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make GỤỌ your gateway to it all and have fun doing so.</p>
                     <!--<div class="input-container">
                         <input type="text" placeholder="Enter Your Book Title Here">
@@ -22,7 +22,7 @@
                 <img src="images/banner-2.png" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h3><?php print  @$slogan?></h3>
+                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
                     <p>Download <?php print  @$siteName?> App for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
                     <!--<div class="input-container">
                         <input type="text" placeholder="Enter Your Book Title Here">
@@ -34,8 +34,8 @@
                 <img src="images/banner-3.png" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h3><?php print  @$slogan?></h3>
-                    <p> Sign up with GỤỌ to start experiencing the fun and knowledge through our numerous smart and user-friendly features that would blow your mind!</p>
+                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
+                    <p> Sign up with GỤỌ to start experiencing fun and knowledge through our numerous smart and user-friendly features that would blow your mind!</p>
                    <!-- <div class="input-container">
                         <input type="text" placeholder="Enter Your Book Title Here">
                         <button><i class="fa fa-search"></i></button>

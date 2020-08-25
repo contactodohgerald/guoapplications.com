@@ -26,15 +26,7 @@ footer .widget h2{
 	margin:0px 0px 20px 0px;
 	position:relative;
 }
-footer .widget h2:before{
-	content:"";
-	width:30px;
-	height:1px;
-	background-color:#fff;
-	position:absolute;
-	left:0px;
-	bottom:0px;
-}
+
 /*
 ===========================================
 			TEXT WIDGET

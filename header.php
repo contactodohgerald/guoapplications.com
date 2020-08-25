@@ -50,7 +50,7 @@
                             <a href="contact_us">Contact Us</a>
                         </li>
                         <li>
-                            <a href="login">Sign In</a>
+                            <a href="signIn">Sign In</a>
                         </li>
                         <li class="last">
                             <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
@@ -70,7 +70,7 @@
                             <a href="contact_us">Contact Us</a>
                         </li>
                         <li>
-                            <a href="login">Sign In</a>
+                            <a href="signIn">Sign In</a>
                         </li>
                         <li class="last">
                             <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>

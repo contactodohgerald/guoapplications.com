@@ -22,48 +22,46 @@
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
                         <h2>Drop Us an Email</h2>
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <input type="text" placeholder="Name" name="name" required>
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="email" placeholder="Email" name="email" required>
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="tel" placeholder="Phone" name="phone" required>
-                                </div>
-                                <div class="col-md-12">
-                                    <textarea name="message" required></textarea>
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button type="submit" name="submit">Send Message</button>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-4 form-group">
+                                <input type="text" placeholder="Name" name="name" required>
                             </div>
-                        </form>
+                            <div class="col-md-4 form-group">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="tel" placeholder="Phone" name="phone" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea name="message" required></textarea>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
+                            </div>
+                            <div class="col-md-12 form-group ">
+                                <button class="guoBtn contactGUO" type="submit">Send</button>
+                            </div>
+                        </div>
                     </div>
                     <!--CONTACT FORM END-->
                 </div>
                 <div class="col-md-5">
                     <!--LOCATION INFO START-->
                     <div class="kode-location">
-                        <h2>Contact Us</h2>
-                        <p><?php print  @$siteName?> is there to make learning a breeze by letting you learn at your convenience.</p>
+                        <h2>Contact Customer Care Service</h2>
+                        <p><?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience.</p>
                     </div>
                     <!--LOCATION INFO END-->
                     <div class="contact-info">
                         <ul>
                             <li>
-                                <i class="fa fa-globe border-red"></i>
-                                <h4>Address</h4>
-                                <p><?php print  @$siteAddress?></p>
+                                <i class="fa fa-whatsapp border-red"></i>
+                                <h4>WhatsApp</h4>
+                                <p><?php print  @$whatsApp?></p>
                             </li>
                             <li>
                                 <i class="fa fa-phone border-yellow"></i>
-                                <h4>Phone &amp; Fax</h4>
+                                <h4>Phone</h4>
                                 <p><?php print  @$sitePhone?></p>
                             </li>
                             <li>

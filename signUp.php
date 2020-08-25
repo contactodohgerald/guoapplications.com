@@ -27,15 +27,15 @@
                         <h2>Sign Up</h2>
                         <div class="row">
                             <div class="col-md-12 form-group" >
-                                <input  id="firstName" class="form-control first_name" type="text" placeholder="Enter First Name" style="margin-bottom: 0">
+                                <input  id="firstName" class="form-control first_name" type="text" placeholder="First Name" style="margin-bottom: 0">
                                 <div class="first_name" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input  id="lastName" class="form-control last_name" type="text" placeholder="Enter Last Name" style="margin-bottom: 0">
+                                <input  id="lastName" class="form-control last_name" type="text" placeholder="Last Name" style="margin-bottom: 0">
                                 <div class="last_name" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input  id="email" class="form-control email" type="email" placeholder="Enter Email Address">
+                                <input  id="email" class="form-control email" type="email" placeholder="Email">
                                 <div class="email" hidden></div>
                             </div>
                            <div class="form-row">
@@ -277,11 +277,11 @@
                                </div>
                            </div>
                             <div class="col-md-12 form-group">
-                                <input id="password" class="form-control password" type="password" placeholder="Enter your password">
+                                <input id="password" class="form-control password" type="password" placeholder="Password">
                                 <div class="password" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input id="password-confirm" class="form-control password_confirmation" type="password" placeholder="Enter your confirm password">
+                                <input id="password-confirm" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
                                 <div class="password_confirmation" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">

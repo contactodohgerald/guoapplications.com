@@ -24,11 +24,11 @@
                         <h2>Sign In</h2>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <input  id="email" class="form-control email" type="email" placeholder="Enter E-Mail Address">
+                                <input  id="email" class="form-control email" type="email" placeholder="Email">
                                 <div class="email" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input  id="password" class="form-control password" type="password" placeholder="Enter Password">
+                                <input  id="password" class="form-control password" type="password" placeholder="Password">
                                 <div class="password" hidden></div>
                             </div>
                             <div class="col-md-12">

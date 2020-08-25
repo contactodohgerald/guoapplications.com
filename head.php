@@ -1,7 +1,8 @@
 <?php
-$siteName = 'GỤỌ ';
+$siteName = 'GỤỌ';
 $siteMail = 'support@guoapplications.com';
 $sitePhone = '+234 803 861 9711';
+$whatsApp = '+234 8187238690';
 $domain = 'guoapplications.com/';
 $siteAddress = 'Enugu, Nigeria';
 $playStore = '#';

@@ -209,7 +209,7 @@ class Routes {
 
     //page urls
     static baseUrl = 'http://127.0.0.1:8000';
-    static loginUrl = './login';
+    static loginUrl = './signIn';
     static emailVerify = './verifyEmail';
     static profileUrl = './profile';
 }
