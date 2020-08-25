@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['api_Token'])){
+    $message = 'Please Login or Create an Account';
+    header('location:signIn?error='.$message);
+}
+?>
+
 <?php require_once ("head.php")?>
 
 <?php require_once ("header_2.php")?>

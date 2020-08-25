@@ -190,9 +190,18 @@ async function loginUser(){
 
         let {token} = return_data; let {original} = token; let {token:user_token} = original;
 
-        NeededModules.showSuccessToaster(success_message,'success');
-        setTimeout(function () {
-            window.location.href = `${Routes.profileUrl}`;
-        }, 2000)
+        let save_user_token = await NeededModules.postRequest('setSession.php',
+            {
+                api_token:user_token,
+            });
+
+        let result = JSON.parse(save_user_token);
+
+        if(result['status'] === true){
+            NeededModules.showSuccessToaster(success_message,'success');
+            setTimeout(function () {
+                window.location.href = `${Routes.profileUrl}`;
+            }, 2000)
+        }
     }
 }

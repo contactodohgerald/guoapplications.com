@@ -8,9 +8,24 @@
                     <h2 class="text-center">Contact Us</h2>
                     <p> <?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience</p>
                     <ul>
-                        <li><i class="fa fa-whatsapp"></i><p><?php print  @$whatsApp?></p></li>
-                        <li><i class="fa fa-phone"></i><p><?php print  @$sitePhone?></p></li>
-                        <li><i class="fa fa-envelope-o"></i><p><a href="mailto:info@bookstore.com"><?php print  @$siteMail?></a></p></li>
+                        <li>
+                            <i class="fa fa-whatsapp"></i>
+                            <p>
+                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service??"><?php print  @$whatsApp?></a>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p>
+                                <a href="tel:<?php print  @$sitePhone?>"><?php print  @$sitePhone?></a>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <p>
+                                <a href="mailto:<?php print  @$siteMail?>"><?php print  @$siteMail?></a>
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +60,7 @@
                     <h2 class="text-center">Newsletter</h2>
                     <p> Subscribe today to get the latest textbooks, exam materials, fun books and features in <?php print  @$siteName?></p>
                     <form action="#" method="post">
-                        <input type="email" placeholder="E-mail ID" name="email" required>
+                        <input type="email" placeholder="Email" name="email" required>
                         <button type="submit" name="submit">Subscribe</button>
                     </form>
                 </div>

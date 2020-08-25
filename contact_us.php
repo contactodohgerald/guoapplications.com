@@ -22,29 +22,32 @@
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
                         <h2>Drop Us an Email</h2>
-                        <div class="row">
-                            <div class="col-md-4 form-group">
-                                <input type="text" placeholder="Name" name="name" required>
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-12 form-group" >
+                                    <input class="form-control" type="text" required name="name" placeholder="Name" style="margin-bottom: 0">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <input class="form-control" type="email" required name="email" placeholder="Email">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea name="message" class="form-control" required style="margin-top: 8px; margin-bottom: 8px" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-md-12 form-group" >
+                                    <input type="tel" class="form-control" name="phone" required placeholder="Phone Number">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="guoBtn" type="submit" name="submit">Send</button>
+                                </div>
                             </div>
-                            <div class="col-md-4 form-group">
-                                <input type="email" placeholder="Email" name="email" required>
-                            </div>
-                            <div class="col-md-4 form-group">
-                                <input type="tel" placeholder="Phone" name="phone" required>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea name="message" required></textarea>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
-                            </div>
-                            <div class="col-md-12 form-group ">
-                                <button class="guoBtn contactGUO" type="submit">Send</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                     <!--CONTACT FORM END-->
                 </div>
+
                 <div class="col-md-5">
                     <!--LOCATION INFO START-->
                     <div class="kode-location">
@@ -55,17 +58,23 @@
                     <div class="contact-info">
                         <ul>
                             <li>
-                                <i class="fa fa-whatsapp border-red"></i>
+                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service??">
+                                    <i class="fa fa-whatsapp border-red"></i>
+                                </a>
                                 <h4>WhatsApp</h4>
                                 <p><?php print  @$whatsApp?></p>
                             </li>
                             <li>
-                                <i class="fa fa-phone border-yellow"></i>
+                                <a href="tel:<?php print  @$sitePhone?>">
+                                    <i class="fa fa-phone border-yellow"></i>
+                                </a>
                                 <h4>Phone</h4>
                                 <p><?php print  @$sitePhone?></p>
                             </li>
                             <li>
-                                <i class="fa fa-envelope-o border-blue"></i>
+                                <a href="mailto:<?php print  @$siteMail?>">
+                                    <i class="fa fa-envelope border-blue"></i>
+                                </a>
                                 <h4>Email</h4>
                                 <p><?php print  @$siteMail?></p>
                             </li>

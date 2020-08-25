@@ -1,8 +1,10 @@
 
 async function getLoggedInUserDetails() {
+    let getUserToken = await NeededModules.getRequest('getSession.php?get_user_token');
+    let {api_token,} = getUserToken;
 
     let userName, userImage;
-    let returnedData = await NeededModules.getRequest(Routes.baseUrl+'/api/getMobileUserDetails'+'?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Nzc2ODQzNCwiZXhwIjoxNTk3NzcyMDM0LCJuYmYiOjE1OTc3Njg0MzQsImp0aSI6IkFYSTM3WHhWbWI4VWpDSUoiLCJzdWIiOiJmOGZmZjgyNzU2ODIzOWVmOGQ0YTc5YTYwNTg5MTMxNSIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEiLCJpZCI6MSwidW5pcXVlX2lkIjoiZjhmZmY4Mjc1NjgyMzllZjhkNGE3OWE2MDU4OTEzMTUiLCJmaXJzdF9uYW1lIjoieGFudGEiLCJsYXN0X25hbWUiOiJnb29kIiwiZW1haWwiOiJ1YmVyQGdtYWlsLmNvbSIsImFwaV90b2tlbiI6InozWUFBWnJHOWFWWVNUMkxTdTFRQ3lEd3l5eDBDTWQzSW9rZ25YUEdkYkdFaTJjTHdRcjE4WW9EVmlZWiIsInVzZXJfdHlwZSI6InVzZXIiLCJpc19kZWxldGVkIjoibm8iLCJyZWdpc3RlcmVkX2F0IjoiMjAyMC0wOC0wOFQxMjo1MzozNyswMDowMCIsImxhc3RfdXBkYXRlZF9hdCI6IjIwMjAtMDgtMTFUMTY6NDU6MjQrMDA6MDAifQ.bXdLLYDd_zpRVybTjlQc9ywtj2qLa6B6QN37Cz4Ol5o');
+    let returnedData = await NeededModules.getRequest(Routes.baseUrl+'/api/getMobileUserDetails'+'?token='+api_token);
     let {status, error_statement, return_data} = returnedData;
 
     if (status === false) {
