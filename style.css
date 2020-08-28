@@ -2589,13 +2589,16 @@ blockquote{
 	margin-bottom:15px;
 }
 .contact-info ul li i.border-red{
-	border-color:#f05a23
+	border-color: #f05a23;
+	color: #f05a23;
 }
 .contact-info ul li i.border-yellow{
-	border-color:#1b1363
+	border-color:#1b1363;
+	color: #1b1363;
 }
 .contact-info ul li i.border-blue{
-	border-color:#2d3092
+	border-color:#2d3092;
+	color: #2d3092;
 }
 .contact-info ul li h4{
 	font-size:14px;

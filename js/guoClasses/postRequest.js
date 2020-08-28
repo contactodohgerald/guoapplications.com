@@ -143,6 +143,28 @@ async function verifyEmails(){
     }
 }
 
+async function resendToken(){
+    let email;
+    email = NeededModules.getTheUniqueKeyFromTheUrl();
+
+    NeededModules.bringOutLoader();
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/resendEmailConfirmToken', {email:email});
+    let {status, error_statement, success_message} = thePostData;
+
+    if (status === false) {
+        NeededModules.removeLoader();
+        NeededModules.handleErrorStatement(error_statement);
+    }
+
+    if (status === true){
+        NeededModules.removeLoader();
+        NeededModules.showSuccessToaster(success_message, 'success');
+        setTimeout(function () {
+            window.location.href =  Routes.emailVerify+`?email=${email}`;
+        }, 2000)
+    }
+}
+
 async function loginUser(){
     let email, password;
 
@@ -206,3 +228,156 @@ async function loginUser(){
         }
     }
 }
+
+async function resetPassword_1(){
+    let email;
+    email = $('.email').val();
+
+    let errorHold = {}, er = [];
+    if (Validator.emptyField(email, 'empty') === false){
+        er.push("<p class='f-size text-center'><span class='text-danger'>*</span>The Email Field is required!</p>");
+        errorHold['email'] = er;
+        Validator.errorChecker = 1;
+    }
+
+    if (Validator.emptyField(email, 'empty') === true){
+        if (Validator.invalidEmail(email, 'email_validation') === false){
+            let error_array = [];
+            error_array.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.emailMessage}</p>`);
+            errorHold['email'] = error_array;
+            Validator.errorChecker = 1;
+        }
+    }
+
+    if(Validator.errorChecker === 1){
+        NeededModules.reportError(errorHold);
+        return;
+    }
+
+    NeededModules.bringOutLoader();
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/getUserEmailForResetPassword', {email:email});
+    let {status, error_statement, success_message} = thePostData;
+
+    if (status === false) {
+        NeededModules.removeLoader();
+        NeededModules.handleErrorStatement(error_statement);
+    }
+
+    if (status === true){
+        NeededModules.removeLoader();
+        NeededModules.showSuccessToaster(success_message, 'success');
+        setTimeout(function () {
+            window.location.href = Routes.resetPassword_2+`?email=${email}`;
+        }, 2000)
+    }
+}
+
+async function resetPassword_2(){
+    let token;
+    token = $('.email_token').val();
+
+    let errorHold = {}, er = [];
+    if (Validator.emptyField(token, 'empty') === false){
+        er.push("<p class='f-size text-center'><span class='text-danger'>*</span>The Token Field is required!</p>");
+        errorHold['email_token'] = er;
+        Validator.errorChecker = 1;
+    }
+
+    if(Validator.errorChecker === 1){
+        NeededModules.reportError(errorHold);
+        return;
+    }
+
+    NeededModules.bringOutLoader();
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/getUserTokenForResetPassword', {email_token:token});
+    let {status, error_statement, success_message} = thePostData;
+
+    if (status === false) {
+        NeededModules.removeLoader();
+        NeededModules.handleErrorStatement(error_statement);
+    }
+
+    if (status === true){
+        NeededModules.removeLoader();
+        NeededModules.showSuccessToaster(success_message, 'success');
+        setTimeout(function () {
+            window.location.href = Routes.resetPassword_3+`?email=${token}`;
+        }, 2000)
+    }
+}
+
+async function resetUsersPassword() {
+    let password, confirm_password, token;
+
+    token = NeededModules.getTheUniqueKeyFromTheUrl();
+    password = $('.password').val();
+    confirm_password = $('.password_confirmation').val();
+
+    let inputValue = [password, confirm_password];
+    let fieldValue = ['Password', 'Confirm Password'];
+    let className = ['password', 'password_confirmation'];
+
+    let errorHold = {};
+    for (let i in inputValue){
+        if (Validator.emptyField(inputValue[i], 'empty') === false){
+            let err = [];
+            err.push("<p class='f-size text-center'><span class='text-danger'>*</span>The "+fieldValue[i]+" Field is required!</p>");
+            errorHold[className[i]] = err;
+            Validator.errorChecker = 1;
+        }
+    }
+
+    if (Validator.emptyField(password, 'empty') === true){
+        if (Validator.equalPassword(password, 'password_confirmation', confirm_password) === false){
+            let errorA = [];
+            errorA.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.passwordMessage}</p>`);
+            errorHold['password' && 'password_confirmation'] = errorA;
+            Validator.errorChecker = 1;
+        }
+    }
+
+    if(Validator.errorChecker === 1){
+        NeededModules.reportError(errorHold);
+        return;
+    }
+
+    NeededModules.bringOutLoader();
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/resetUserPassword/', {password:password, password_confirmation:confirm_password, email_token:token});
+    let {status, error_statement, success_message} = thePostData;
+
+    if (status === false) {
+        NeededModules.removeLoader();
+        NeededModules.handleErrorStatement(error_statement);
+    }
+
+    if (status === true){
+        NeededModules.removeLoader();
+        NeededModules.showSuccessToaster(success_message, 'success');
+        setTimeout(function () {
+            window.location.href = Routes.loginUrl;
+        }, 2000)
+    }
+}
+
+async function resendTokenForPassword(){
+    let email;
+    email = NeededModules.getTheUniqueKeyFromTheUrl();
+
+    NeededModules.bringOutLoader();
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/resendTokenToEmailForPassword', {email:email});
+    let {status, error_statement, success_message} = thePostData;
+
+    if (status === false) {
+        NeededModules.removeLoader();
+        NeededModules.handleErrorStatement(error_statement);
+    }
+
+    if (status === true){
+        NeededModules.removeLoader();
+        NeededModules.showSuccessToaster(success_message, 'success');
+        setTimeout(function () {
+            window.location.href =  Routes.resetPassword_2+`?email=${email}`;
+        }, 2000)
+    }
+}
+

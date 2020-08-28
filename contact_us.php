@@ -24,19 +24,19 @@
                         <h2>Drop Us an Email</h2>
                         <form action="#" method="post">
                             <div class="row">
-                                <div class="col-md-12 form-group" >
-                                    <input class="form-control" type="text" required name="name" placeholder="Name" style="margin-bottom: 0">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
+                                    <input class="form-control" type="text" required name="name" placeholder="Name" style="margin-bottom: 8px">
                                 </div>
-                                <div class="col-md-12 form-group">
-                                    <input class="form-control" type="email" required name="email" placeholder="Email">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
+                                    <input class="form-control" type="email" required name="email" placeholder="Email" style="margin-bottom: 6px">
                                 </div>
-                                <div class="col-md-12 form-group">
-                                    <textarea name="message" class="form-control" required style="margin-top: 8px; margin-bottom: 8px" rows="4" placeholder="Message"></textarea>
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
+                                    <textarea name="message" class="form-control" required style=" margin-bottom: 8px" rows="4" placeholder="Message"></textarea>
                                 </div>
-                                <div class="col-md-12 form-group" >
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
                                     <input type="tel" class="form-control" name="phone" required placeholder="Phone Number">
                                 </div>
-                                <div class="col-md-12 form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
                                     <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
                                 </div>
                                 <div class="col-md-12">
@@ -58,7 +58,7 @@
                     <div class="contact-info">
                         <ul>
                             <li>
-                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service??">
+                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service?">
                                     <i class="fa fa-whatsapp border-red"></i>
                                 </a>
                                 <h4>WhatsApp</h4>

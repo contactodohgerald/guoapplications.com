@@ -31,6 +31,9 @@
                                 <input  id="password" class="form-control password" type="password" placeholder="Password">
                                 <div class="password" hidden></div>
                             </div>
+                            <div class="col-md-12" style="margin-top: 10px">
+                                <h3><a href="./resetPassword_1">Forgot Your Password?</a> </h3>
+                            </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="loginUser()">Sign In</button>
                             </div>

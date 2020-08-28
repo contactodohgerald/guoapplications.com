@@ -27,11 +27,11 @@
                         <h2>Sign Up</h2>
                         <div class="row">
                             <div class="col-md-12 form-group" >
-                                <input  id="firstName" class="form-control first_name" type="text" placeholder="First Name" style="margin-bottom: 0">
+                                <input  id="firstName" class="form-control first_name" type="text" placeholder="First Name" style="margin-bottom: 8px">
                                 <div class="first_name" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input  id="lastName" class="form-control last_name" type="text" placeholder="Last Name" style="margin-bottom: 0">
+                                <input  id="lastName" class="form-control last_name" type="text" placeholder="Last Name" style="margin-bottom: 8px">
                                 <div class="last_name" hidden></div>
                             </div>
                             <div class="col-md-12 form-group">
@@ -272,7 +272,7 @@
                                    <div class="country" hidden></div>
                                </div>
                                <div class="form-group col-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                                   <input type="tel" class="form-control phone" id="phone" placeholder="Enter your phone number">
+                                   <input type="tel" class="form-control phone" id="phone" placeholder="Phone Number">
                                    <div class="phone" hidden></div>
                                </div>
                            </div>

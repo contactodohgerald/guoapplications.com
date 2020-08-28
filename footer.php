@@ -11,7 +11,7 @@
                         <li>
                             <i class="fa fa-whatsapp"></i>
                             <p>
-                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service??"><?php print  @$whatsApp?></a>
+                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service?"><?php print  @$whatsApp?></a>
                             </p>
                         </li>
                         <li>
@@ -45,10 +45,13 @@
                             <a href="contact_us">Contact Us</a>
                         </li>
                         <li>
-                            <a href="signIn">Login</a>
+                            <a href="signIn">Sign In</a>
                         </li>
                         <li>
                             <a href="signUp">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="termsCondition">Terms & Condition</a>
                         </li>
                     </ul>
                 </div>
@@ -57,12 +60,27 @@
             <!--NEWSLETTER START-->
             <div class="col-md-4">
                 <div class="widget widget-newletter">
-                    <h2 class="text-center">Newsletter</h2>
-                    <p> Subscribe today to get the latest textbooks, exam materials, fun books and features in <?php print  @$siteName?></p>
-                    <form action="#" method="post">
-                        <input type="email" placeholder="Email" name="email" required>
-                        <button type="submit" name="submit">Subscribe</button>
-                    </form>
+                    <h2 class="text-center">Join Us</h2>
+                    <p>Join and Follow <?php print  @$siteName?> Today</p>
+                    <div class="contact-info">
+                        <ul>
+                            <li>
+                                <a href="<?php print  @$faceBook?>" target="_blank">
+                                    <i class="fa fa-facebook border-red"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php print  @$twitter?>" target="_blank">
+                                    <i class="fa fa-twitter border-yellow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php print  @$instagram?>" target="_blank">
+                                    <i class="fa fa-instagram border-blue"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!--NEWSLETTER START END-->

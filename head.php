@@ -7,6 +7,9 @@ $domain = 'guoapplications.com/';
 $siteAddress = 'Enugu, Nigeria';
 $playStore = '#';
 $appleUrl = '#';
+$faceBook = 'https://www.facebook.com/guoapplications';
+$twitter = 'https://twitter.com/guoapplications';
+$instagram = 'https://www.instagram.com/guoapplications/';
 $slogan = 'Read & Listen to Success';
 ?>
 <!DOCTYPE html>

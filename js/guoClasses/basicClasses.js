@@ -212,5 +212,7 @@ class Routes {
     static loginUrl = './signIn';
     static emailVerify = './verifyEmail';
     static profileUrl = './profile';
+    static resetPassword_2 = './resetPassword_2';
+    static resetPassword_3 = './resetPassword_3';
 }
 

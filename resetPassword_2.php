@@ -4,11 +4,12 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Email Token</h2>
+            <h2>Verify Token</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
-                <li><a href="./signUp">Sign Up</a></li>
-                <li class="active">Email Token</li>
+                <li><a href="./signIn">Sign In</a></li>
+                <li><a href="./resetPassword_1">Verify Email</a></li>
+                <li class="active">Verify Token</li>
             </ol>
         </div>
         <?php require_once ("downloadAppHold.php")?>
@@ -22,17 +23,17 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Email Token</h2>
+                        <h2>Verify Token</h2>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="token" class="form-control email_token" type="number" placeholder="Token">
                                 <div class="email_token" hidden></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="verifyEmails()">Verify Email</button>
+                                <button class="guoBtn" type="submit" onclick="resetPassword_2()">Verify Token</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendToken()">Resend Token</button></h3>
+                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend Token</button></h3>
                             </div>
                         </div>
                     </div>

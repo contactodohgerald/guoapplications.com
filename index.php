@@ -96,8 +96,8 @@
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-calculator"></i>
-                            <h3><a href="#">Start Using</a></h3>
-                            <p>Now you are in <?php print @$siteName?>, start browsing through numerous textbooks, exam materials and fun books that will blow your mind</p>
+                            <h3><a href="#">Enjoy <?php print @$siteName?></a></h3>
+                            <p>Enjoy the numerous textbooks, exam materials and fun books in <?php print @$siteName?> that will blow your mind!</p>
                         </div>
                     </div>
                 </div>

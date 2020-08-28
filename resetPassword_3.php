@@ -4,11 +4,13 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Email Token</h2>
+            <h2>Reset Password</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
-                <li><a href="./signUp">Sign Up</a></li>
-                <li class="active">Email Token</li>
+                <li><a href="./signIn">Sign In</a></li>
+                <li><a href="./resetPassword_1">Verify Email</a></li>
+                <li><a href="./resetPassword_2">Verify Token</a></li>
+                <li class="active">Reset Password</li>
             </ol>
         </div>
         <?php require_once ("downloadAppHold.php")?>
@@ -22,17 +24,18 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Email Token</h2>
+                        <h2>Reset Password</h2>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <input  id="token" class="form-control email_token" type="number" placeholder="Token">
-                                <div class="email_token" hidden></div>
+                                <input  id="password_" class="form-control password" type="password" placeholder="Password">
+                                <div class="password" hidden></div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input  id="password" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
+                                <div class="password_confirmation" hidden></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="verifyEmails()">Verify Email</button>
-                            </div>
-                            <div class="col-md-12" style="margin-top: 10px">
-                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendToken()">Resend Token</button></h3>
+                                <button class="guoBtn" type="submit" onclick="resetUsersPassword()">Create New Password</button>
                             </div>
                         </div>
                     </div>
