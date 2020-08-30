@@ -11,6 +11,9 @@ $faceBook = 'https://www.facebook.com/guoapplications';
 $twitter = 'https://twitter.com/guoapplications';
 $instagram = 'https://www.instagram.com/guoapplications/';
 $slogan = 'Read & Listen to Success';
+
+define('SITE_KEY', '6LcDWMUZAAAAAC2QJ-KNq1Tqxwog2NKPG-ow4oHS');
+define('SECRET_KEY', '6LcDWMUZAAAAAIUYjW1g32gVPTWezP40clqyIjPg');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,11 +70,5 @@ $slogan = 'Read & Listen to Success';
     <!-- Favicon -->
     <link rel="icon" href="images/logo/favicon.png">
 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-   <!-- [if lt IE 9]>
-   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <!--   <![endif]-->
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY?>"></script>
 </head>

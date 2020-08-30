@@ -284,9 +284,6 @@
                                 <input id="password-confirm" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
                                 <div class="password_confirmation" hidden></div>
                             </div>
-                            <div class="col-md-12 form-group">
-                                <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
-                            </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="registerUser()">Sign Up</button>
                             </div>
@@ -303,5 +300,14 @@
 <?php require_once ("footer.php")?>
     </div>
     <!--WRAPPER END-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <?php require_once ("e_script.php")?>
+<script>
+    function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('<?php echo SITE_KEY;?>', {action: 'submit'}).then(function(token) {
+                // Add your logic to submit to your backend server here.
+            });
+        });
+    }
+</script>

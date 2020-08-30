@@ -36,9 +36,6 @@
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
                                     <input type="tel" class="form-control" name="phone" required placeholder="Phone Number">
                                 </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
-                                    <div class="g-recaptcha" data-sitekey="6LeUp8EZAAAAAIVaGovlteZESiVnChTgYR9Jqos-"></div>
-                                </div>
                                 <div class="col-md-12">
                                     <button class="guoBtn" type="submit" name="submit">Send</button>
                                 </div>
