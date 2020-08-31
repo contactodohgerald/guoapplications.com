@@ -1,8 +1,8 @@
 <?php
 $siteName = 'GỤỌ';
 $siteMail = 'support@guoapplications.com';
-$sitePhone = '+234 803 861 9711';
-$whatsApp = '+234 8187238690';
+$sitePhone = '+2348038619711';
+$whatsApp = '+2348187238690';
 $domain = 'guoapplications.com/';
 $siteAddress = 'Enugu, Nigeria';
 $playStore = '#';
@@ -32,7 +32,7 @@ define('SECRET_KEY', '6LcDWMUZAAAAAIUYjW1g32gVPTWezP40clqyIjPg');
     <meta property="og:url" content="http://<?php print $domain;?>/;">
     <meta property="og:image" content="images/logo/GuoLogo.png">
     <meta property="og:description" content="Access books and exam materials any time, anywhere.">
-    <meta property="og:site_name" content="<?php echo $siteName; ?>">
+    <meta property="og:site_name" content="<?php echo $siteName; ?> - <?php echo $slogan; ?>">
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="415" />
     <meta property="og:image:secure_url" content="images/logo/GuoLogo.png" />
@@ -41,7 +41,7 @@ define('SECRET_KEY', '6LcDWMUZAAAAAIUYjW1g32gVPTWezP40clqyIjPg');
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#1b1363" />
 
-    <title><?php print  @$siteName?></title>
+    <title><?php echo $siteName; ?> - <?php echo $slogan; ?></title>
     <!-- CUSTOM STYLE -->
     <link href="style.css" rel="stylesheet">
     <!-- THEME TYPO -->

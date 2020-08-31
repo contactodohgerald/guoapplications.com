@@ -9,19 +9,19 @@
                     <p> <?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience</p>
                     <ul>
                         <li>
-                            <i class="fa fa-whatsapp"></i>
+                            <i class="fa fa-whatsapp" style="color: #f05a23"></i>
                             <p>
                                 <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service?"><?php print  @$whatsApp?></a>
                             </p>
                         </li>
                         <li>
-                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-phone" style="color: #1b1363"></i>
                             <p>
                                 <a href="tel:<?php print  @$sitePhone?>"><?php print  @$sitePhone?></a>
                             </p>
                         </li>
                         <li>
-                            <i class="fa fa-envelope-o"></i>
+                            <i class="fa fa-envelope-o" style="color: #2d3092"></i>
                             <p>
                                 <a href="mailto:<?php print  @$siteMail?>"><?php print  @$siteMail?></a>
                             </p>

@@ -29,7 +29,7 @@
                                 <div class="email" hidden></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="resetPassword_1()">Verify Email</button>
+                                <button class="guoBtn" type="submit" onclick="resetPassword_1()">Send</button>
                             </div>
                         </div>
                     </div>

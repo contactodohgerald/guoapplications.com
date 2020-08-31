@@ -1797,6 +1797,19 @@ footer{
 				BANNER SEARCH
 =============================================
 */
+.banner-searchs{
+	float:left;
+	width:100%;
+	padding:30px;
+	background-color:#2a2a2a;
+	border-top:solid 3px #f05a23;
+}
+.banner-searchs h2{
+	font-size:22px;
+	color:#fff;
+	text-transform:uppercase;
+	margin:0;
+}
 .banner-search{
 	float:left;
 	width:100%;
@@ -1808,7 +1821,7 @@ footer{
 	font-size:22px;
 	color:#fff;
 	text-transform:uppercase;
-	margin:0px;
+	margin:0;
 }
 .banner-search input[type="text"], .banner-search select{
 	height:44px;
@@ -2560,6 +2573,40 @@ blockquote{
 }
 .kode-location p{
 	margin:0px;
+}
+.contact-infos{
+	float:left;
+	width:100%;
+
+}
+.contact-infos ul{
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.contact-infos ul li{
+	float:left;
+	width:33.333%;
+	text-align:center;
+	padding:0 10px;
+}
+.contact-infos ul li i{
+	font-size:40px;
+	height:84px;
+	width:84px;
+	line-height:64px;
+	margin-bottom:15px;
+}
+.contact-infos ul li i.border-red{
+	color: #f05a23;
+}
+.contact-infos ul li i.border-yellow{
+	color: #1b1363;
+}
+.contact-infos ul li i.border-blue{
+	color: #2d3092;
 }
 .contact-info{
 	float:left;

@@ -32,7 +32,7 @@
                                 <div class="password" hidden></div>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h3><a href="./resetPassword_1">Forgot Your Password?</a> </h3>
+                                <h5>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h5>
                             </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="loginUser()">Sign In</button>

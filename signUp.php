@@ -284,6 +284,14 @@
                                 <input id="password-confirm" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
                                 <div class="password_confirmation" hidden></div>
                             </div>
+                            <div class="form-row">
+                                <div class=" col-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" >
+                                    <input type="checkbox" checked >
+                                </div>
+                                <div class=" col-11 col-lg-11 col-md-11 col-sm-11 col-xs-11" >
+                                    <p style="font-size: 14px">Sign up to get the latest promos, features, textbooks, exam materials and fun books.</p>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="registerUser()">Sign Up</button>
                             </div>

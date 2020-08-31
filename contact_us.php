@@ -33,9 +33,6 @@
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
                                     <textarea name="message" class="form-control" required style=" margin-bottom: 8px" rows="4" placeholder="Message"></textarea>
                                 </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group" >
-                                    <input type="tel" class="form-control" name="phone" required placeholder="Phone Number">
-                                </div>
                                 <div class="col-md-12">
                                     <button class="guoBtn" type="submit" name="submit">Send</button>
                                 </div>
@@ -48,7 +45,7 @@
                 <div class="col-md-5">
                     <!--LOCATION INFO START-->
                     <div class="kode-location">
-                        <h2>Contact Customer Care Service</h2>
+                        <h2>Contact Customer Care</h2>
                         <p><?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience.</p>
                     </div>
                     <!--LOCATION INFO END-->
