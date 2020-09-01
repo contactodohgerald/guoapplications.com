@@ -7,25 +7,8 @@
                 <div class="widget widget-text">
                     <h2 class="text-center">Contact Us</h2>
                     <p> <?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience</p>
-                    <ul>
-                        <li>
-                            <i class="fa fa-whatsapp" style="color: #f05a23"></i>
-                            <p>
-                                <a href="whatsapp://send?phone=<?php print  @$whatsApp?>&text=How Can We Be Of Service?"><?php print  @$whatsApp?></a>
-                            </p>
-                        </li>
-                        <li>
-                            <i class="fa fa-phone" style="color: #1b1363"></i>
-                            <p>
-                                <a href="tel:<?php print  @$sitePhone?>"><?php print  @$sitePhone?></a>
-                            </p>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope-o" style="color: #2d3092"></i>
-                            <p>
-                                <a href="mailto:<?php print  @$siteMail?>"><?php print  @$siteMail?></a>
-                            </p>
-                        </li>
+                    <ul id="footer_contactUs">
+
                     </ul>
                 </div>
             </div>
@@ -62,24 +45,8 @@
                 <div class="widget widget-newletter">
                     <h2 class="text-center">Join Us</h2>
                     <p>Join and Follow <?php print  @$siteName?> Today</p>
-                    <div class="contact-info">
-                        <ul>
-                            <li>
-                                <a href="<?php print  @$faceBook?>" target="_blank">
-                                    <i class="fa fa-facebook border-red"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php print  @$twitter?>" target="_blank">
-                                    <i class="fa fa-twitter border-yellow"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php print  @$instagram?>" target="_blank">
-                                    <i class="fa fa-instagram border-blue"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="contact-info" id="footer_join_us">
+
                     </div>
                 </div>
             </div>

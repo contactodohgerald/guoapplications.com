@@ -22,19 +22,19 @@
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
                         <h2>Sign In</h2>
-                        <div class="row">
-                            <div class="col-md-12 form-group">
+                        <div class="row container-fluid">
+                            <div class="form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
                                 <div class="email" hidden></div>
                             </div>
-                            <div class="col-md-12 form-group">
+                            <div class="form-group">
                                 <input  id="password" class="form-control password" type="password" placeholder="Password">
                                 <div class="password" hidden></div>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
                                 <h5>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h5>
                             </div>
-                            <div class="col-md-12">
+                            <div class="form-group">
                                 <button class="guoBtn" type="submit" onclick="loginUser()">Sign In</button>
                             </div>
                         </div>

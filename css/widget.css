@@ -1078,7 +1078,7 @@ footer .widget-newletter button:hover{
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #f05a23;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1095,7 +1095,7 @@ footer .widget-newletter button:hover{
 	bottom: 5px;
 	border-radius: 50%;
 	border: 3px solid transparent;
-	border-top-color: #e74c3c;
+	border-top-color: #1b1363;
 
 	-webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
 	animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1110,7 +1110,7 @@ footer .widget-newletter button:hover{
 	bottom: 15px;
 	border-radius: 50%;
 	border: 3px solid transparent;
-	border-top-color: #f9c922;
+	border-top-color: #2d3092;
 
 	-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
 	  animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
