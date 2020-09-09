@@ -15,6 +15,7 @@
     </div>
     <!--BANNER END-->
     <!--CONTENT START-->
+<?php   foreach ($response_array->return_data as $responses){ ?>
     <div class="kode-content">
         <!--BOOK GUIDE SECTION START-->
         <section>
@@ -30,10 +31,10 @@
                             <img src="images/mockUp/guo_app.png" alt="<?php print  @$siteName?>">
                         </div>
                         <div class="col-md-7">
-                            <p id="about_us"></p>
-                            <!--<p class="cap">Have you ever wondered how you can effortlessly recite a song you have listened to just a few times but may have difficulty remembering paragraphs in a book or exam materials you have read a few times? It has been a long-established fact that listening is a superior way of learning than reading. When you combine listening and reading, the act of learning becomes a whole lot easier and much more impactful. </p>
+                         <!--   <p class="cap">Have you ever wondered how you can effortlessly recite a song you have listened to just a few times but may have difficulty remembering paragraphs in a book or exam materials you have read a few times? It has been a long-established fact that listening is a superior way of learning than reading. When you combine listening and reading, the act of learning becomes a whole lot easier and much more impactful. </p>
                             <p><?php /*print  @$siteName*/?> is here to make learning a breeze by letting you learn at your convenience. With <?php /*print  @$siteName*/?>, you can choose to only read or only listen or do both read and listen to your fun books, textbooks or your exam materials. You can do these while you are doing other things like travelling or just lying down. <?php /*print  @$siteName*/?> is for all ages and very user friendly. Try it today.</p>
                             <p>Are you reading for fun or have an exam that you want to pass with flying colors? Or maybe you just want to acquire knowledge. Make <?php /*print  @$siteName*/?>  your gateway to it all and have fun doing so.</p>-->
+                            <p class="cap"><?php echo $responses->about_us?></p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@
                                         <!--<p>It has been proven over the years that children memorize and remember songs that they listen to much quicker, easier and stronger than things they read. The sense of hearing is one that does not necessarily require strong concentration from the child to acquire knowledge. A child can be doing multiple things like texting, playing with toys and playing with friends and still be listening to her favorite songs playing through his or her headphones or earbuds. These songs can be played over and over multiple times and in no time the child has memorized the song and very many other songs in that short period. But these songs, though memorized may not be concretized since spoken words and songs are usually different and therefore, they are called “Lyrics” instead of “Notes” or “Literature” or other academic terms. Now imagine a child listening to notes or literature or test books over and over and also when he or she can, looking over the actual words! This may help to bridge the disparity between kids whose parents can afford extra classes outside school and the kids who can barely afford to go to school – that is what <?php /*print  @$siteName*/?> has come to fulfill.
                                         </p>
                                         <p> Adolescents and adults also love listening to music and books. They too will benefit a whole lot from <?php /*print  @$siteName*/?>. The combination of reading and listening to textbooks and exam materials whenever, wherever will highly increase the acquisition of knowledge and the passing of exams with flying colors. Fun books like novels and story books will also be enjoyed in <?php /*print  @$siteName*/?>!</p>-->
-                                        <p id="why_guo"></p>
+                                        <p><?php echo $responses->why_guo?></p>
                                     </div>
                                 </div>
 
@@ -85,7 +86,8 @@
                                     </div>
                                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                         <div class="panel-body" id="mission">
-                                           <!-- If that poor child in a remote village in Ihiala, Anambra, Nigeria or the affluent child in metropolitan Banana Island, Lagos, Nigeria or the middle-class child in Uwani, Enugu, Nigeria can embrace <?php /*print  @$siteName*/?>, we would have achieved one of our important mission. If an undergraduate in College of Medicine, University of Nigeria, Enugu Campus, the post-graduate in University of Lagos Business School and the secondary school kid anywhere in Nigeria consider <?php /*print  @$siteName*/?> a “must-have”, we would have also reached another milestone in our mission. Ultimately, we want everybody, regardless of your inclination to have a great reason to download and use <?php /*print  @$siteName*/?> because sincerely, we want to carry everyone along on this mission called --><?php /*print  @$siteName*/?>
+                                          <!-- If that poor child in a remote village in Ihiala, Anambra, Nigeria or the affluent child in metropolitan Banana Island, Lagos, Nigeria or the middle-class child in Uwani, Enugu, Nigeria can embrace <?php /*print  @$siteName*/?>, we would have achieved one of our important mission. If an undergraduate in College of Medicine, University of Nigeria, Enugu Campus, the post-graduate in University of Lagos Business School and the secondary school kid anywhere in Nigeria consider <?php /*print  @$siteName*/?> a “must-have”, we would have also reached another milestone in our mission. Ultimately, we want everybody, regardless of your inclination to have a great reason to download and use <?php /*print  @$siteName*/?> because sincerely, we want to carry everyone along on this mission called --><?php /*print  @$siteName*/?>
+                                            <?php echo $responses->mission?>
                                         </div>
                                     </div>
                                 </div>
@@ -99,11 +101,12 @@
                                         </h4>
                                     </div>
                                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body" id="vision">
+                                        <div class="panel-body">
                                            <!-- We anticipate that sooner than later, <?php /*print  @$siteName*/?> will be used by every student in Nigeria, other African Countries and indeed all over the world. We also imagine that readers who want to acquire knowledge, have fun reading novels and story books or just want to keep their minds busy will find <?php /*print  @$siteName*/?> irresistible.
                                             <br>
                                             Try <?php /*print  @$siteName*/?> today, you may well love it and be part of the <?php /*print  @$siteName*/?> Family. Do you know that <?php /*print  @$siteName*/?> literally means “Read” in Igbo, an African Language spoken by majority of people in South Eastern, Nigeria?
                                             We hope that <?php /*print  @$siteName*/?> will be the app for reading and listening to books written in native languages like Igbo, Yoruba, Hausa, Swahili and many other African languages. It may also help endangered languages. <?php /*print  @$siteName*/?> will likely become a backbone for not only the preservation but the expansion of these languages.-->
+                                            <?php echo $responses->vision?>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +118,9 @@
         </section>
         <!--ABOUT INFO SECTION END-->
     </div>
+<?php  }; ?>
     <!--CONTENT END-->
+
 
 <?php require_once ("footer.php")?>
 

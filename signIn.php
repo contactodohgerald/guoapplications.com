@@ -23,6 +23,17 @@
                     <div class="comment-form">
                         <h2>Sign In</h2>
                         <div class="row container-fluid">
+                            <?php if(isset($_GET['error'])){ ?>
+                                <div class="row">
+                                    <div id="go" class=" col-lg-12">
+                                        <p>
+                                        <div id="go" class="alert alert-danger" style="text-align: left; color:#61B831;">
+                                            Please Login or Create an Account
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            <?php } ?>
                             <div class="form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
                                 <div class="email" hidden></div>

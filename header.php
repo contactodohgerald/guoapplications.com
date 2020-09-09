@@ -49,9 +49,15 @@
                         <li>
                             <a href="contact_us">Contact Us</a>
                         </li>
-                        <li>
-                            <a href="signIn">Sign In</a>
-                        </li>
+                      <?php  if (isset($_SESSION['api_Token'])){ ?>
+                          <li onclick="NeededModules.bringOutModalMain('.user-log-out')">
+                              <a href="javascript:;">Sign Out</a>
+                          </li>
+                      <?php }else{ ?>
+                          <li>
+                              <a href="signIn">Sign In</a>
+                          </li>
+                        <?php } ?>
                         <li class="last">
                             <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
                         </li>
@@ -69,9 +75,15 @@
                         <li>
                             <a href="contact_us">Contact Us</a>
                         </li>
-                        <li>
-                            <a href="signIn">Sign In</a>
-                        </li>
+                        <?php  if (isset($_SESSION['api_Token'])){ ?>
+                            <li>
+                                <a href="javascript:;">Sign Out</a>
+                            </li>
+                        <?php }else{ ?>
+                            <li>
+                                <a href="signIn">Sign In</a>
+                            </li>
+                        <?php } ?>
                         <li class="last">
                             <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
                         </li>

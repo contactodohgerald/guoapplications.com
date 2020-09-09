@@ -2617,14 +2617,14 @@ blockquote{
 	float:left;
 	width:100%;
 	list-style:none;
-	margin:0px;
-	padding:0px;
+	margin:0;
+	padding:0;
 }
 .contact-info ul li{
 	float:left;
-	width:33.333%;
+	width:25%;
 	text-align:center;
-	padding:0px 10px;
+	padding:0 10px;
 }
 .contact-info ul li i{
 	font-size:30px;
@@ -2650,7 +2650,7 @@ blockquote{
 .contact-info ul li h4{
 	font-size:14px;
 	text-transform:uppercase;
-	margin:0px;
+	margin:0;
 }
 .contact-info ul li p{
 	font-size:14px;

@@ -1,14 +1,34 @@
 <?php
+session_start();
+
 $siteName = 'GỤỌ';
 $domain = 'guoapplications.com/';
 $siteAddress = 'Enugu, Nigeria';
 $playStore = '#';
 $appleUrl = '#';
-$instagram = 'https://www.instagram.com/guoapplications/';
 $slogan = 'Read & Listen to Success';
+
+define('youtube', 'https://www.youtube.com/channel/UC90U6aqYtVs7493rh4tGQ5Q/?guided_help_flow=5');
 
 define('SITE_KEY', '6LcDWMUZAAAAAC2QJ-KNq1Tqxwog2NKPG-ow4oHS');
 define('SECRET_KEY', '6LcDWMUZAAAAAIUYjW1g32gVPTWezP40clqyIjPg');
+
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'https://guo.guoapplications.com/api/getAllSettings',
+    CURLOPT_USERAGENT => 'Get About Us Details',
+
+]);
+
+$response = curl_exec($curl);
+
+$response_array = json_decode($response);
+
+curl_close($curl)
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,3 +87,30 @@ define('SECRET_KEY', '6LcDWMUZAAAAAIUYjW1g32gVPTWezP40clqyIjPg');
 
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY?>"></script>
 </head>
+
+<!-- Modal -->
+<div class="modal fade jackInTheBox user-log-out" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #f05a23 !important;">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:white !important; ">Logout Prompt</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <h3 class="text-center m-0">Do You Really Want to Sign Out?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="logout">
+                    <button type="button" class="btn btn-primary">Logout</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

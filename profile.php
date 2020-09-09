@@ -1,13 +1,13 @@
+
+<?php require_once ("head.php")?>
+
 <?php
-session_start();
 
 if (!isset($_SESSION['api_Token'])){
     $message = 'Please Login or Create an Account';
     header('location:signIn?error='.$message);
 }
 ?>
-
-<?php require_once ("head.php")?>
 
 <?php require_once ("header_2.php")?>
 
@@ -100,5 +100,7 @@ if (!isset($_SESSION['api_Token'])){
 <?php require_once ("e_script.php")?>
 
 <script>
-    getLoggedInUserDetails();
+    $(document).ready(function () {
+        getLoggedInUserDetails();
+    })
 </script>

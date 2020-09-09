@@ -57,6 +57,19 @@ class NeededModules {
                 .then(err => reject(err));
 
         });
+/*
+        return new Promise(function (resolve, reject) {
+
+            $.get(url, function (data, status) {
+
+                if(status === 'success'){
+                    resolve(data)
+                }else{
+                    reject(status)
+                }
+            })
+
+        })*/
     }
 
     static postRequest(url, params)
@@ -75,6 +88,10 @@ class NeededModules {
 
         })
     }
+
+    static bringOutModalMain(value){
+       $(value).modal('show');
+   }
 
     //handle error statement
     static handleErrorStatement(error_statement)

@@ -18,9 +18,5 @@
 <script src="js/guoClasses/postRequest.js"></script>
 <script src="js/guoClasses/getRequest.js"></script>
 
-<script>
-    getAboutUsDetails();
-</script>
-
 </body>
 </html>

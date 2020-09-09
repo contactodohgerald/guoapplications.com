@@ -1,3 +1,91 @@
+<?php
+function autoReplyMail($name,$email,$subj){
+    $to  = $email;
+    $d = date('Y');
+    $subject ='Auto-Reply GỤỌ';
+    $message = 'Your message have been received. Thank you for contacting us. We will get back to you as soon as possible.';
+    $content = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<table  width="90%" align="center">
+  <tr>
+  	<td>
+  		Hi '.$name.', '.$message.'
+  	</td>
+  </tr>
+  <tr style="color: #AC8989;">
+  	<td>
+  	<hr>
+		<u>Support Team GỤỌ</u>
+		<br />
+		For more detail contact us:<br />
+		Email:support@guoapplications.com
+  	</td>
+  </tr>
+  <tr align="center" style="color: #B17071">
+  	<td>
+  		&copy; '.$d.'. GỤỌ Applications Ltd
+  	</td>
+  </tr>
+</table>
+</body>
+</html>';
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: SchoolPAL <support@schoolpal.app>' . "\r\n";
+    $retval = @mail($to,$subject,$content,$headers);
+    if($retval = true){
+        return   'Mail sent successfully';
+    }else{
+        return  'Internal error. Mail fail to send';
+    }
+}
+
+function contactUsMail($name,$email,$message){
+    $to  = 'support@guoapplications.com';
+    $subject = 'Contact Us Message';
+    $content = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<table  width="90%" align="center">
+	  <tr style="border-bottom: 2px solid #1B1717;">
+		
+	  </tr>
+	  <tr>
+		<td>
+			'.$message.'
+		</td>
+	  </tr>
+	  <tr align="right">
+		<td>
+			<strong>Name: '.$name.'<br />
+			Email: '.$email.'</strong>
+		</td>
+	  </tr>
+	</table>
+	</body>
+	</html>';
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: GỤỌ <support@guoapplications.com>' . "\r\n";
+    $retval = @mail($to,$subject,$content,$headers);
+    if($retval = true){
+        autoReplyMail($name,$email,$subject);
+        return  'Mail sent successfully';
+    }else{
+        return 'Internal error. Mail fail to send';
+    }
+}
+if(isset($_POST['submit'])){
+    $msg = contactUsMail($_POST['name'],$_POST['email'],$_POST['message']);
+}
+?>
 <?php require_once ("head.php")?>
 
 <?php require_once ("header_2.php")?>
@@ -22,8 +110,18 @@
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
                         <h2>Drop Us an Email</h2>
-                        <form action="#" method="post">
+                        <form action="" method="post">
                             <div class="container-fluid">
+                                <?php if(!empty($msg) || !empty($msg2)){?>
+                                    <div class="row">
+                                        <div id="go" class=" col-lg-12">
+                                            <p>
+                                            <div id="go" class="alert alert-danger" style="text-align: left; color:#61B831;">
+                                                <?php if(!empty($msg)){ print @$msg.'<br />';};?><?php print @$msg2;?> </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                <?php }?>
                                 <div class="form-group" >
                                     <input class="form-control" type="text" required name="name" placeholder="Name" style="margin-bottom: 8px">
                                 </div>
@@ -49,8 +147,32 @@
                         <p><?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience.</p>
                     </div>
                     <!--LOCATION INFO END-->
-                    <div class="contact-info" id="contactUs">
-
+                    <div class="contact-info">
+                        <?php   foreach ($response_array->return_data as $responses){ ;?>
+                        <ul>
+                            <li>
+                                <a href="whatsapp://send?phone=<?php echo $responses->whatsAppPhone ?>&text=How Can We Be Of Service?">
+                                    <i class="fa fa-whatsapp border-red"></i>
+                                </a>
+                                <h4>WhatsApp</h4>
+                                <p> <?php echo $responses->whatsAppPhone ?></p>
+                            </li>
+                            <li>
+                                <a href="tel:<?php echo $responses->siteOfficialPhone ?>">
+                                    <i class="fa fa-phone border-yellow"></i>
+                                </a>
+                                <h4>Phone</h4>
+                                <p> <?php echo $responses->siteOfficialPhone ?></p>
+                            </li>
+                            <li>
+                                <a href="mailto:<?php echo $responses->siteMail ?>">
+                                    <i class="fa fa-envelope border-blue"></i>
+                                </a>
+                                <h4>Email</h4>
+                                <p><?php echo $responses->siteMail ?></p>
+                            </li>
+                        </ul>
+                        <?php  }; ?>
                     </div>
                 </div>
             </div>
