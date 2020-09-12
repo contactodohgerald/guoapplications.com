@@ -26,7 +26,7 @@
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
-                                <div class="email" hidden></div>
+                                <div class="err_email error_displayer"></div>
                             </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="resetPassword_1()">Send</button>

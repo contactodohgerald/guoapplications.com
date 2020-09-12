@@ -28,15 +28,15 @@
                         <div class="">
                             <div class="form-group" >
                                 <input  id="firstName" class="form-control first_name" type="text" placeholder="First Name" style="margin-bottom: 8px">
-                                <div class="first_name" hidden></div>
+                                <div class="err_first_name error_displayer"></div>
                             </div>
                             <div class="form-group">
                                 <input  id="lastName" class="form-control last_name" type="text" placeholder="Last Name" style="margin-bottom: 8px">
-                                <div class="last_name" hidden></div>
+                                <div class="err_last_name error_displayer"></div>
                             </div>
                             <div class="form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
-                                <div class="email" hidden></div>
+                                <div class="err_email error_displayer"></div>
                             </div>
                            <div class="form-row">
                                <div class="col-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group" style="padding-left: 0">
@@ -273,16 +273,16 @@
                                </div>
                                <div class=" col-9 col-lg-9 col-md-9 col-sm-9 col-xs-9 form-group" style="padding-right: 0">
                                    <input type="tel" class="form-control phone" id="phone" placeholder="Phone Number">
-                                   <div class="phone" hidden></div>
+                                   <div class="err_phone error_displayer"></div>
                                </div>
                            </div>
                             <div class="form-group">
                                 <input id="password" class="form-control password" type="password" placeholder="Password">
-                                <div class="password" hidden></div>
+                                <div class="err_password error_displayer"></div>
                             </div>
                             <div class="form-group">
                                 <input id="password-confirm" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
-                                <div class="password_confirmation" hidden></div>
+                                <div class="err_password_confirmation error_displayer"></div>
                             </div>
                             <div class="row">
                                 <div class=" col-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" >

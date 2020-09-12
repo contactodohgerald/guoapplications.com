@@ -36,11 +36,11 @@
                             <?php } ?>
                             <div class="form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
-                                <div class="email" hidden></div>
+                                <div class="err_email error_displayer"></div>
                             </div>
                             <div class="form-group">
                                 <input  id="password" class="form-control password" type="password" placeholder="Password">
-                                <div class="password" hidden></div>
+                                <div class="err_password error_displayer"></div>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
                                 <h5>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h5>

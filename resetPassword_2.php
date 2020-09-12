@@ -27,13 +27,13 @@
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="token" class="form-control email_token" type="number" placeholder="Token">
-                                <div class="email_token" hidden></div>
+                                <div class="err_email_token error_displayer"></div>
                             </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="resetPassword_2()">Verify Token</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend Token</button></h3>
+                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend</button></h3>
                             </div>
                         </div>
                     </div>

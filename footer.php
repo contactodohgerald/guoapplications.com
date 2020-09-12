@@ -55,6 +55,9 @@
                         <li>
                             <a href="termsCondition">Terms & Condition</a>
                         </li>
+                        <li>
+                            <a href="faq">FAQ</a>
+                        </li>
                     </ul>
                 </div>
             </div>

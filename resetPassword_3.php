@@ -28,11 +28,11 @@
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="password_" class="form-control password" type="password" placeholder="Password">
-                                <div class="password" hidden></div>
+                                <div class="err_password error_displayer"></div>
                             </div>
                             <div class="col-md-12 form-group">
                                 <input  id="password" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
-                                <div class="password_confirmation" hidden></div>
+                                <div class="err_password_confirmation error_displayer"></div>
                             </div>
                             <div class="col-md-12">
                                 <button class="guoBtn" type="submit" onclick="resetUsersPassword()">Create New Password</button>

@@ -8,8 +8,6 @@ $playStore = '#';
 $appleUrl = '#';
 $slogan = 'Read & Listen to Success';
 
-define('youtube', 'https://www.youtube.com/channel/UC90U6aqYtVs7493rh4tGQ5Q/?guided_help_flow=5');
-
 define('SITE_KEY', '6LcDWMUZAAAAAC2QJ-KNq1Tqxwog2NKPG-ow4oHS');
 define('SECRET_KEY', '6LcDWMUZAAAAAIUYjW1g32gVPTWezP40clqyIjPg');
 

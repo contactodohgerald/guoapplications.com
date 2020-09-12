@@ -49,6 +49,9 @@
                         <li>
                             <a href="contact_us">Contact Us</a>
                         </li>
+                        <li>
+                            <a href="faq">FAQ</a>
+                        </li>
                       <?php  if (isset($_SESSION['api_Token'])){ ?>
                           <li onclick="NeededModules.bringOutModalMain('.user-log-out')">
                               <a href="javascript:;">Sign Out</a>
@@ -74,6 +77,9 @@
                         </li>
                         <li>
                             <a href="contact_us">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="faq">FAQ</a>
                         </li>
                         <?php  if (isset($_SESSION['api_Token'])){ ?>
                             <li>

@@ -11,41 +11,18 @@ async function registerUser() {
     passwordConfirmation = $('.password_confirmation').val();
     adminType = 'user';
 
-    let inputValue = [firstName, lastName, email, phone, country, password, passwordConfirmation];
-    let fieldValue = ['First Name', 'Last Name', 'Email', 'Phone', 'Country', 'Password', 'Confirm Password'];
-    let classNames = ['first_name', 'last_name', 'email', 'phone', 'country', 'password', 'password_confirmation'];
-
-    let errorHold = {};
-    for (let i in inputValue){
-        let er = [];
-        if (Validator.emptyField(inputValue[i], 'empty') === false){
-            er.push("<p class='f-size text-center'><span class='text-danger'>*</span>The "+fieldValue[i]+" Field is required!</p>");
-            errorHold[classNames[i]] = er;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if (Validator.emptyField(email, 'empty') === true){
-        if (Validator.invalidEmail(email, 'email_validation') === false){
-            let error_array = [];
-            error_array.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.emailMessage}</p>`);
-            errorHold['email'] = error_array;
-            Validator.errorChecker = 1;
-        }
-    }
-
-
-    if (Validator.emptyField(password, 'empty') === true){
-        if (Validator.equalPassword(password, 'password_confirmation', passwordConfirmation) === false){
-            let errorA = [];
-            errorA.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.passwordMessage}</p>`);
-            errorHold['password' && 'password_confirmation'] = errorA;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if(Validator.errorChecker === 1){
-        NeededModules.reportError(errorHold);
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        firstName+'|first_name|First Name|empty',
+        lastName+'|last_name|Last Name|empty',
+        phone+'|phone|Phone Number|empty',
+        email+'|email|Email|empty,email',
+        password+'|password|Password|empty',
+        passwordConfirmation+'|password_confirmation|Confirm Password|empty',
+        password+':'+passwordConfirmation+'|password_confirmation|Confirm|password_match_validation',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
     }
 
@@ -66,7 +43,8 @@ async function registerUser() {
 
     if (status === false) {
         NeededModules.removeLoader();
-        NeededModules.handleErrorStatement(error_statement);
+        validatorDetails.handleErrorStatement(error_statement);
+        return ;
     }
 
     if (status === true){
@@ -141,41 +119,23 @@ async function loginUser(){
     email = $('.email').val();
     password = $('.password').val();
 
-    let inputValue = [email, password];
-    let fieldValue = ['Email', 'Password'];
-    let className = ['email', 'password'];
-
-    let errorHold = {};
-    for (let i in inputValue){
-        if (Validator.emptyField(inputValue[i], 'empty') === false){
-            let err = [];
-            err.push("<p class='f-size text-center'><span class='text-danger'>*</span>The "+fieldValue[i]+" Field is required!</p>");
-            errorHold[className[i]] = err;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if (Validator.emptyField(email, 'empty') === true){
-        if (Validator.invalidEmail(email, 'email_validation') === false){
-            let error_array = [];
-            error_array.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.emailMessage}</p>`);
-            errorHold['email'] = error_array;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if(Validator.errorChecker === 1){
-        NeededModules.reportError(errorHold);
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        email+'|email|Email|empty,email',
+        password+'|password|Password|empty',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
     }
-
 
     NeededModules.bringOutLoader();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/login', {email:email, password:password});
     let {status, error_statement, success_message, return_data} = thePostData;
     if (status === false) {
         NeededModules.removeLoader();
-        NeededModules.handleErrorStatement(error_statement);
+        validatorDetails.handleErrorStatement(error_statement);
+        return ;
     }
 
     if (status === true){
@@ -203,24 +163,12 @@ async function resetPassword_1(){
     let email;
     email = $('.email').val();
 
-    let errorHold = {}, er = [];
-    if (Validator.emptyField(email, 'empty') === false){
-        er.push("<p class='f-size text-center'><span class='text-danger'>*</span>The Email Field is required!</p>");
-        errorHold['email'] = er;
-        Validator.errorChecker = 1;
-    }
-
-    if (Validator.emptyField(email, 'empty') === true){
-        if (Validator.invalidEmail(email, 'email_validation') === false){
-            let error_array = [];
-            error_array.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.emailMessage}</p>`);
-            errorHold['email'] = error_array;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if(Validator.errorChecker === 1){
-        NeededModules.reportError(errorHold);
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        email+'|email|Email|empty,email',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
     }
 
@@ -230,7 +178,8 @@ async function resetPassword_1(){
 
     if (status === false) {
         NeededModules.removeLoader();
-        NeededModules.handleErrorStatement(error_statement);
+        validatorDetails.handleErrorStatement(error_statement);
+        return ;
     }
 
     if (status === true){
@@ -246,15 +195,12 @@ async function resetPassword_2(){
     let token;
     token = $('.email_token').val();
 
-    let errorHold = {}, er = [];
-    if (Validator.emptyField(token, 'empty') === false){
-        er.push("<p class='f-size text-center'><span class='text-danger'>*</span>The Token Field is required!</p>");
-        errorHold['email_token'] = er;
-        Validator.errorChecker = 1;
-    }
-
-    if(Validator.errorChecker === 1){
-        NeededModules.reportError(errorHold);
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        token+'|email_token|Token|empty,number',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
     }
 
@@ -264,7 +210,8 @@ async function resetPassword_2(){
 
     if (status === false) {
         NeededModules.removeLoader();
-        NeededModules.handleErrorStatement(error_statement);
+        validatorDetails.handleErrorStatement(error_statement);
+        return ;
     }
 
     if (status === true){
@@ -283,31 +230,14 @@ async function resetUsersPassword() {
     password = $('.password').val();
     confirm_password = $('.password_confirmation').val();
 
-    let inputValue = [password, confirm_password];
-    let fieldValue = ['Password', 'Confirm Password'];
-    let className = ['password', 'password_confirmation'];
-
-    let errorHold = {};
-    for (let i in inputValue){
-        if (Validator.emptyField(inputValue[i], 'empty') === false){
-            let err = [];
-            err.push("<p class='f-size text-center'><span class='text-danger'>*</span>The "+fieldValue[i]+" Field is required!</p>");
-            errorHold[className[i]] = err;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if (Validator.emptyField(password, 'empty') === true){
-        if (Validator.equalPassword(password, 'password_confirmation', confirm_password) === false){
-            let errorA = [];
-            errorA.push(`<p class='f-size text-center'><span class='text-danger'>*</span>${Messages.passwordMessage}</p>`);
-            errorHold['password' && 'password_confirmation'] = errorA;
-            Validator.errorChecker = 1;
-        }
-    }
-
-    if(Validator.errorChecker === 1){
-        NeededModules.reportError(errorHold);
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        password+'|password|Password|empty',
+        confirm_password+'|password_confirmation|Confirm Password|empty',
+        password+':'+confirm_password+'|password_confirmation|Confirm|password_match_validation',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
     }
 
@@ -317,7 +247,8 @@ async function resetUsersPassword() {
 
     if (status === false) {
         NeededModules.removeLoader();
-        NeededModules.handleErrorStatement(error_statement);
+        validatorDetails.handleErrorStatement(error_statement);
+        return ;
     }
 
     if (status === true){
