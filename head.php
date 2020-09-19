@@ -83,7 +83,7 @@ curl_close($curl)
     <!-- Favicon -->
     <link rel="icon" href="images/logo/favicon.png">
 
-    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY?>"></script>
+   <!-- <script src="https://www.google.com/recaptcha/api.js?render=<?php /*echo SITE_KEY*/?>"></script>-->
 </head>
 
 <!-- Modal -->

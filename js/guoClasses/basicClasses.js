@@ -489,6 +489,16 @@ class NeededModules {
         }
     }
 
+    static togglePassword(val, val2) {
+        let x = document.getElementById(val);
+        $(val2).toggleClass("fa-eye fa-eye-slash");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
 }
 
 class Routes {

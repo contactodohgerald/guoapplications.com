@@ -1,6 +1,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
 
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
