@@ -20,8 +20,9 @@
                     <div class="comment-form">
                         <div class="row">
                             <script src="https://checkout.flutterwave.com/v3.js"></script>
-                            <div class="col-md-12 text-center">
-                                <button type="button" class="guoBtn" onClick="buyBook()">Pay Now</button>
+                            <div class="col-md-12 text-center verifyPaymentTextHold">
+                              <!--  <button type="button" class="guoBtn" onClick="buyBook()">Pay Now</button>-->
+
                             </div>
                         </div>
                     </div>
@@ -173,19 +174,28 @@
         let urlValues = window.location.href.split('=');
         let token = urlValues[2];
 
+        let textHold;
        // let validatorDetails = new validatorClass();
         let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/confirmUserPayment', {token:token, transaction_id:transaction_id, amount:amount, tx_ref:tx_ref, flw_ref:flw_ref, currency:currency});
         let {status, error_statement, success_message} = thePostData;
 
         if (status === false) {
-            NeededModules.removeLoader();
-            NeededModules.handleErrorStatement(error_statement);
+            textHold = `<div class="alert alert-danger"><h4>${error_statement}</h4></div>`;
+            $('.verifyPaymentTextHold').html(textHold);
             return ;
         }
 
         if (status === true){
-            NeededModules.showSuccessToaster(success_message, 'success');
+            communicateToWebView();
+            textHold = ` <div class="alert alert-success"><h4>${success_message}</h4></div>`;
+            $('.verifyPaymentTextHold').html(textHold);
         }
+    }
+
+    function communicateToWebView() {
+        var currentHref = window.location.href;
+        window.history.pushState(null, null, '/successPage');
+        setTimeout(() => window.location.replace(currentHref), 1000);
     }
 
     function makePayment(amount, currency, name, email, phone, transactionId) {

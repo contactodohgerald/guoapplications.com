@@ -131,6 +131,13 @@ if(isset($_POST['submit'])){
                                 <div class="form-group" >
                                     <textarea name="message" class="form-control" required style=" margin-bottom: 8px" rows="4" placeholder="Message"></textarea>
                                 </div>
+
+                                <div id='recaptcha' class="g-recaptcha"
+                                     data-sitekey="6LfdENAZAAAAADQN3Dm-EoQse6pxSJ0Jo45JrsDR"
+                                     data-callback="onSubmit"
+                                     data-size="invisible">
+                                </div>
+
                                 <div class="form-group">
                                     <button class="guoBtn" type="submit" name="submit">Send</button>
                                 </div>

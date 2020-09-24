@@ -18,5 +18,7 @@
 <script src="js/guoClasses/postRequest.js"></script>
 <script src="js/guoClasses/getRequest.js"></script>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </body>
 </html>

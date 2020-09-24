@@ -1,3 +1,11 @@
+function onSubmit(token) {
+    console.log(token);
+}
+
+function onLoad() {
+    registerUser();
+}
+
 async function registerUser() {
 
     let firstName, lastName, email, adminType, phone, country, password, passwordConfirmation, Phone, code;
@@ -24,6 +32,8 @@ async function registerUser() {
     ])){
         validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
+    }else {
+        grecaptcha.execute();
     }
 
     let phoneCode = country.split('/')[0];
@@ -37,6 +47,7 @@ async function registerUser() {
         code = `${phoneCode}${phone}`;
     }
 
+    grecaptcha.execute();
     NeededModules.bringOutLoader();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register', {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, user_type:adminType});
     let {status, error_statement, success_message} = thePostData;

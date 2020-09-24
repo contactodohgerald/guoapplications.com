@@ -7,7 +7,7 @@
     <div class="kode-banner">
         <ul class="bxslider">
             <li>
-                <img src="images/banner-1.png" alt="<?php print  @$siteName?>">
+                <img src="images/banner-1.jpg" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
                     <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
@@ -19,7 +19,7 @@
                 </div>
             </li>
             <li>
-                <img src="images/banner-2.png" alt="<?php print  @$siteName?>">
+                <img src="images/banner-2.jpg" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
                     <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
@@ -31,7 +31,7 @@
                 </div>
             </li>
             <li>
-                <img src="images/banner-3.png" alt="<?php print  @$siteName?>">
+                <img src="images/banner-3.jpg" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
                     <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>

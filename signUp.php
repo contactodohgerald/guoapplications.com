@@ -292,8 +292,15 @@
                                     <p style="font-size: 14px">Sign up to get the latest promos, features, textbooks, exam materials and fun books.</p>
                                 </div>
                             </div>
+
+                            <div id='recaptcha' class="g-recaptcha"
+                                 data-sitekey="6LfdENAZAAAAADQN3Dm-EoQse6pxSJ0Jo45JrsDR"
+                                 data-callback="onSubmit"
+                                 data-size="invisible">
+                            </div>
+
                             <div class="form-group">
-                                <button class="guoBtn" type="submit" onclick="registerUser()">Sign Up</button>
+                                <button class="guoBtn" type="submit" onclick="onLoad()">Sign Up</button>
                             </div>
                         </div>
                     </div>

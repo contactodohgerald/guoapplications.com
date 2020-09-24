@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1286c9-2e55-4917-b622-d38102217396" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/successPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact_us.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/header_2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/banner-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/banner-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/banner-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/banner-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/banner-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/banner-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo/GuoLogo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/GuoLogo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mockUp/inner-banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/mockUp/inner-banner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/guoClasses/basicClasses.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/guoClasses/basicClasses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mockUp/inner-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/guoClasses/postRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/guoClasses/postRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay_with_flutterwave.php" beforeDir="false" afterPath="$PROJECT_DIR$/pay_with_flutterwave.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/signUp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,124 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header_2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="55" column="26" selection-start-line="55" selection-start-column="22" selection-end-line="57" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_us.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="1545" column="1" selection-start-line="1545" selection-start-column="1" selection-end-line="1545" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/e_script.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pay_with_flutterwave.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="173" column="33" lean-forward="true" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
-              <folding>
-                <element signature="n#footer#0;n#!!top" />
-                <element signature="e#6381#6397#0#HTML" />
-                <element signature="e#6750#6856#0#HTML" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/guoClasses/basicClasses.js">
+        <entry file="file://$PROJECT_DIR$/successPage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="499" column="5" selection-start-line="499" selection-start-column="5" selection-end-line="499" selection-end-column="5" />
-              <folding>
-                <element signature="n#validatorClass#0" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#!!block;n#chckForLogout#0;n#validatorClass#0" />
-                <element signature="n#Messages#0" />
-                <element signature="n#!!block;n#getRequest#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#postRequest#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#handleErrorStatement#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#returnDateDetails_2#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#returnSurfixPosition#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#capitalizeFirstLetter#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#bringOutLoader#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#removeLoader#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#showSuccessToaster#0;n#NeededModules#0" />
-                <element signature="n#!!block;n#reportError#0;n#NeededModules#0" />
-                <element signature="n#Routes#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/guoClasses/postRequest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="69" />
-              <folding>
-                <element signature="n#!!block;n#verifyEmails#0" />
-                <element signature="n#!!block;n#resendToken#0" />
-                <element signature="n#!!block;n#loginUser#0" />
-                <element signature="n#!!block;n#resetPassword_1#0" />
-                <element signature="n#!!block;n#resetPassword_2#0" />
-                <element signature="n#!!block;n#resetUsersPassword#0" />
-                <element signature="e#9436#9542#0" />
-                <element signature="e#9568#9811#0" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -187,7 +81,6 @@
         <option value="$PROJECT_DIR$/js/guoClasses/getRequest.js" />
         <option value="$PROJECT_DIR$/about_us.php" />
         <option value="$PROJECT_DIR$/downloadAppHold.php" />
-        <option value="$PROJECT_DIR$/contact_us.php" />
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/footer.php" />
@@ -195,21 +88,22 @@
         <option value="$PROJECT_DIR$/resetPassword_1.php" />
         <option value="$PROJECT_DIR$/resetPassword_2.php" />
         <option value="$PROJECT_DIR$/resetPassword_3.php" />
-        <option value="$PROJECT_DIR$/signUp.php" />
-        <option value="$PROJECT_DIR$/js/guoClasses/postRequest.js" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/signIn.php" />
         <option value="$PROJECT_DIR$/js/guoClasses/basicClasses.js" />
-        <option value="$PROJECT_DIR$/pay_with_flutterwave.php" />
         <option value="$PROJECT_DIR$/header_2.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/head.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/e_script.php" />
+        <option value="$PROJECT_DIR$/signUp.php" />
+        <option value="$PROJECT_DIR$/js/guoClasses/postRequest.js" />
+        <option value="$PROJECT_DIR$/contact_us.php" />
+        <option value="$PROJECT_DIR$/pay_with_flutterwave.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -227,17 +121,6 @@
             <path>
               <item name="guoapplications" type="b2602c69:ProjectViewProjectNode" />
               <item name="guoapplications" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guoapplications" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guoapplications" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guoapplications" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guoapplications" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="guoClasses" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,12 +176,12 @@
       <workItem from="1599502834324" duration="14172000" />
       <workItem from="1599585680723" duration="15930000" />
       <workItem from="1599721862974" duration="5067000" />
-      <workItem from="1599858653174" duration="31774000" />
+      <workItem from="1599858653174" duration="46580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207256000" />
+    <option name="totallyTimeSpent" value="222062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -374,13 +257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/downloadAppHold.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -406,13 +282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact_us.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="108" column="10" lean-forward="true" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -513,23 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-          <folding>
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signIn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -544,20 +396,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/guoClasses/postRequest.js">
+    <entry file="file://$PROJECT_DIR$/header_2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="69" />
-          <folding>
-            <element signature="n#!!block;n#verifyEmails#0" />
-            <element signature="n#!!block;n#resendToken#0" />
-            <element signature="n#!!block;n#loginUser#0" />
-            <element signature="n#!!block;n#resetPassword_1#0" />
-            <element signature="n#!!block;n#resetPassword_2#0" />
-            <element signature="n#!!block;n#resetUsersPassword#0" />
-            <element signature="e#9436#9542#0" />
-            <element signature="e#9568#9811#0" />
-          </folding>
+        <state relative-caret-position="1088">
+          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-932" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_us.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -585,64 +453,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pay_with_flutterwave.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="173" column="33" lean-forward="true" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" />
-            <element signature="e#6381#6397#0#HTML" />
-            <element signature="e#6750#6856#0#HTML" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header_2.php">
+    <entry file="file://$PROJECT_DIR$/downloadAppHold.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="55" column="26" selection-start-line="55" selection-start-column="22" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about_us.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="1545" column="1" selection-start-line="1545" selection-start-column="1" selection-end-line="1545" selection-end-column="1" />
+        <state relative-caret-position="491">
+          <caret line="1550" lean-forward="true" selection-start-line="1550" selection-end-line="1550" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/head.php">
+    <entry file="file://$PROJECT_DIR$/contact_us.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="120" column="28" lean-forward="true" selection-end-line="194" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
+    <entry file="file://$PROJECT_DIR$/signUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="389">
+          <caret line="294" lean-forward="true" selection-start-line="294" selection-end-line="294" />
+          <folding>
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e_script.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/guoClasses/postRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!block;n#verifyEmails#0" />
+            <element signature="n#!!block;n#resendToken#0" />
+            <element signature="n#!!block;n#loginUser#0" />
+            <element signature="n#!!block;n#resetPassword_1#0" />
+            <element signature="n#!!block;n#resetPassword_2#0" />
+            <element signature="n#!!block;n#resetUsersPassword#0" />
+            <element signature="e#9436#9542#0" />
+            <element signature="e#9568#9811#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/successPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay_with_flutterwave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
