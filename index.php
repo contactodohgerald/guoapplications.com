@@ -2,47 +2,43 @@
 
 <?php require_once ("header.php")?>
 
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'https://guo.guoapplications.com/api/getAllSlideImages',
+    CURLOPT_USERAGENT => 'Get About Us Details',
+
+]);
+
+$slide_image = curl_exec($curl);
+
+$slide_image_response = json_decode($slide_image);
+//print_r();
+curl_close($curl)
+
+
+?>
+
     <!--HEADER END-->
     <!--BANNER START-->
     <div class="kode-banner">
-        <ul class="bxslider">
-            <li>
-                <img src="images/banner-1.jpg" alt="<?php print  @$siteName?>">
-                <div class="kode-caption">
-                    <h2><?php print  @$siteName?></h2>
-                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
-                    <p>Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make GỤỌ your gateway to it all and have fun doing so.</p>
-                    <!--<div class="input-container">
-                        <input type="text" placeholder="Enter Your Book Title Here">
-                        <button><i class="fa fa-search"></i></button>
-                    </div>-->
-                </div>
-            </li>
-            <li>
-                <img src="images/banner-2.jpg" alt="<?php print  @$siteName?>">
-                <div class="kode-caption">
-                    <h2><?php print  @$siteName?></h2>
-                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
-                    <p>Download <?php print  @$siteName?> App for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
-                    <!--<div class="input-container">
-                        <input type="text" placeholder="Enter Your Book Title Here">
-                        <button><i class="fa fa-search"></i></button>
-                    </div>-->
-                </div>
-            </li>
-            <li>
-                <img src="images/banner-3.jpg" alt="<?php print  @$siteName?>">
-                <div class="kode-caption">
-                    <h2><?php print  @$siteName?></h2>
-                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
-                    <p> Sign up with GỤỌ to start experiencing fun and knowledge through our numerous smart and user-friendly features that would blow your mind!</p>
-                   <!-- <div class="input-container">
-                        <input type="text" placeholder="Enter Your Book Title Here">
-                        <button><i class="fa fa-search"></i></button>
-                    </div>-->
-                </div>
-            </li>
-        </ul>
+    <?php   foreach ($slide_image_response->return_data as $get_response){ ?>
+            <ul class="bxslider">
+            <?php for ($i = 0; $i < count($get_response); $i++){ ?>
+                <li>
+                    <img src="<?php echo $slide_image_response->return_data->image_path.$get_response[$i]->images?>" alt="<?php print  @$siteName?>">
+                    <div class="kode-caption">
+                        <h2><?php print  @$siteName?></h2>
+                        <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
+                        <p><?php echo $get_response[$i]->description?></p>
+                    </div>
+                </li>
+            <?php } ?>
+            </ul>
+    <?php  }; ?>
     </div>
     <!--BANNER END-->
     <!--BUT NOW START-->

@@ -21,8 +21,7 @@
                         <div class="row">
                             <script src="https://checkout.flutterwave.com/v3.js"></script>
                             <div class="col-md-12 text-center verifyPaymentTextHold">
-                              <!--  <button type="button" class="guoBtn" onClick="buyBook()">Pay Now</button>-->
-
+                                <!--<button type="button" class="guoBtn" onClick="purchaseBookByUser()">Pay Now</button>-->
                             </div>
                         </div>
                     </div>
@@ -146,10 +145,10 @@
 <script>
 
     $(document).ready(function () {
-        buyBook()
+        purchaseBookByUser()
     });
 
-    async function buyBook() {
+    async function purchaseBookByUser() {
 
         let urlValues = window.location.href.split('=');
         let bookId = urlValues[1].split('&')[0];
@@ -186,16 +185,12 @@
         }
 
         if (status === true){
-            communicateToWebView();
             textHold = ` <div class="alert alert-success"><h4>${success_message}</h4></div>`;
             $('.verifyPaymentTextHold').html(textHold);
+            setTimeout(function () {
+                window.location.href = '/successPage';
+            }, 2000)
         }
-    }
-
-    function communicateToWebView() {
-        var currentHref = window.location.href;
-        window.history.pushState(null, null, '/successPage');
-        setTimeout(() => window.location.replace(currentHref), 1000);
     }
 
     function makePayment(amount, currency, name, email, phone, transactionId) {
