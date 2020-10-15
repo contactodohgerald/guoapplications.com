@@ -29,7 +29,7 @@
                                 <div class="err_email error_displayer"></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="resetPassword_1()">Send</button>
+                                <button class="guoBtn" id="guoBtn" type="submit" onclick="resetPassword_1()">Send</button>
                             </div>
                         </div>
                     </div>

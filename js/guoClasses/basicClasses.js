@@ -430,6 +430,14 @@ class NeededModules {
         $('.guoBtn').removeAttr('disabled')
     }
 
+    static disableButton(){
+        $("#guoBtn").addClass('hidden');
+    }
+
+    static unDisableButton(){
+        $("#guoBtn").removeClass('hidden');
+    }
+
     static showSuccessToaster(message, tooastType)
     {
 

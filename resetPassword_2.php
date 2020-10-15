@@ -33,7 +33,7 @@
                                 <button class="guoBtn" type="submit" onclick="resetPassword_2()">Verify Token</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend</button></h3>
+                                <h3>Didn't Get Token? <button class="guoBtn"  id="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend</button></h3>
                             </div>
                         </div>
                     </div>

@@ -32,7 +32,7 @@
                                 <button class="guoBtn" type="submit" onclick="verifyEmails()">Verify Email</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h3>Didn't Get Token? <button class="guoBtn" type="submit" onclick="resendToken()">Resend Token</button></h3>
+                                <h3>Didn't Get Token? <button class="guoBtn" id="guoBtn" type="submit" onclick="resendToken()">Resend Token</button></h3>
                             </div>
                         </div>
                     </div>

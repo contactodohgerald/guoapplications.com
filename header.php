@@ -56,14 +56,17 @@
                           <li onclick="NeededModules.bringOutModalMain('.user-log-out')">
                               <a href="javascript:;">Sign Out</a>
                           </li>
+                          <li class="last">
+                              <a href="profile" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Profile</a>
+                          </li>
                       <?php }else{ ?>
                           <li>
                               <a href="signIn">Sign In</a>
                           </li>
+                          <li class="last">
+                              <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
+                          </li>
                         <?php } ?>
-                        <li class="last">
-                            <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
-                        </li>
                     </ul>
                 </div>
                 <div id="kode-responsive-navigation" class="dl-menuwrapper">
@@ -82,17 +85,20 @@
                             <a href="faq">FAQ</a>
                         </li>-->
                         <?php  if (isset($_SESSION['api_Token'])){ ?>
-                            <li>
+                            <li onclick="NeededModules.bringOutModalMain('.user-log-out')">
                                 <a href="javascript:;">Sign Out</a>
+                            </li>
+                            <li class="last">
+                                <a href="profile" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Profile</a>
                             </li>
                         <?php }else{ ?>
                             <li>
                                 <a href="signIn">Sign In</a>
                             </li>
+                            <li class="last">
+                                <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
+                            </li>
                         <?php } ?>
-                        <li class="last">
-                            <a href="signUp" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Sign Up</a>
-                        </li>
                     </ul>
                 </div>
             </div>

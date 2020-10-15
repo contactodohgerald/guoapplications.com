@@ -16,7 +16,7 @@ curl_setopt_array($curl, [
 $slide_image = curl_exec($curl);
 
 $slide_image_response = json_decode($slide_image);
-//print_r();
+//print_r($slide_image_response);
 curl_close($curl)
 
 
@@ -25,20 +25,19 @@ curl_close($curl)
     <!--HEADER END-->
     <!--BANNER START-->
     <div class="kode-banner">
-    <?php   foreach ($slide_image_response->return_data as $get_response){ ?>
-            <ul class="bxslider">
-            <?php for ($i = 0; $i < count($get_response); $i++){ ?>
-                <li>
-                    <img src="<?php echo $slide_image_response->return_data->image_path.$get_response[$i]->images?>" alt="<?php print  @$siteName?>">
-                    <div class="kode-caption">
-                        <h2><?php print  @$siteName?></h2>
-                        <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
-                        <p><?php echo $get_response[$i]->description?></p>
-                    </div>
-                </li>
-            <?php } ?>
-            </ul>
-    <?php  }; ?>
+        <ul class="bxslider">
+            <?php $slideImage = $slide_image_response->return_data?>
+            <?php   foreach ($slideImage->slide_image as $get_response){ ?>
+            <li>
+                <img src="<?php echo $slideImage->image_path.$get_response->images?>" alt="<?php print  @$siteName?>">
+                <div class="kode-caption">
+                    <h2><?php print  @$siteName?></h2>
+                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
+                    <p><?php echo $get_response->description?></p>
+                </div>
+            </li>
+            <?php  }; ?>
+        </ul>
     </div>
     <!--BANNER END-->
     <!--BUT NOW START-->

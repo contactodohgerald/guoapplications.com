@@ -300,7 +300,7 @@
                             </div>
 
                             <div class="form-group">
-                                <button class="guoBtn" type="submit" onclick="onLoad()">Sign Up</button>
+                                <button class="guoBtn" id="guoBtn" type="submit" onclick="onLoad()">Sign Up</button>
                             </div>
                         </div>
                     </div>

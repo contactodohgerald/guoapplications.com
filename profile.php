@@ -28,7 +28,7 @@ if (!isset($_SESSION['api_Token'])){
         <!--AUTHOR DETAIL SECTION START-->
         <section class="kode-author-detail-2">
             <div class="container">
-                <div class="kode-thumb userImages">
+                <div class="kode-thumb">
 
                 </div>
                 <div class="kode-text">

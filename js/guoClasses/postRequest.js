@@ -48,18 +48,18 @@ async function registerUser() {
     }
 
     grecaptcha.execute();
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register', {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, user_type:adminType});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         validatorDetails.handleErrorStatement(error_statement);
         return ;
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href = Routes.emailVerify+`?email=${email}`;
@@ -84,17 +84,17 @@ async function verifyEmails(){
         return;
     }
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/verifyEmailToken/'+email, {email_token:token});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.handleErrorStatement(error_statement);
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href = Routes.loginUrl;
@@ -106,17 +106,17 @@ async function resendToken(){
     let email;
     email = NeededModules.getTheUniqueKeyFromTheUrl();
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/resendEmailConfirmToken', {email:email});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.handleErrorStatement(error_statement);
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href =  Routes.emailVerify+`?email=${email}`;
@@ -140,18 +140,17 @@ async function loginUser(){
         return;
     }
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/login', {email:email, password:password});
     let {status, error_statement, success_message, return_data} = thePostData;
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         validatorDetails.handleErrorStatement(error_statement);
         return ;
     }
 
     if (status === true){
-        NeededModules.removeLoader();
-
+        NeededModules.unDisableButton();
         let {token} = return_data; let {original} = token; let {token:user_token} = original;
 
         let save_user_token = await NeededModules.postRequest('setSession.php',
@@ -183,18 +182,18 @@ async function resetPassword_1(){
         return;
     }
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/getUserEmailForResetPassword', {email:email});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         validatorDetails.handleErrorStatement(error_statement);
         return ;
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href = Routes.resetPassword_2+`?email=${email}`;
@@ -215,18 +214,18 @@ async function resetPassword_2(){
         return;
     }
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/getUserTokenForResetPassword', {email_token:token});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         validatorDetails.handleErrorStatement(error_statement);
         return ;
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href = Routes.resetPassword_3+`?email=${token}`;
@@ -252,18 +251,18 @@ async function resetUsersPassword() {
         return;
     }
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/resetUserPassword/', {password:password, password_confirmation:confirm_password, email_token:token});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         validatorDetails.handleErrorStatement(error_statement);
         return ;
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href = Routes.loginUrl;
@@ -275,17 +274,17 @@ async function resendTokenForPassword(){
     let email;
     email = NeededModules.getTheUniqueKeyFromTheUrl();
 
-    NeededModules.bringOutLoader();
+    NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/resendTokenToEmailForPassword', {email:email});
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.handleErrorStatement(error_statement);
     }
 
     if (status === true){
-        NeededModules.removeLoader();
+        NeededModules.unDisableButton();
         NeededModules.showSuccessToaster(success_message, 'success');
         setTimeout(function () {
             window.location.href =  Routes.resetPassword_2+`?email=${email}`;

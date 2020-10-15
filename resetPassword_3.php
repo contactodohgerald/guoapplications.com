@@ -35,7 +35,7 @@
                                 <div class="err_password_confirmation error_displayer"></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="resetUsersPassword()">Create New Password</button>
+                                <button class="guoBtn" id="guoBtn" type="submit" onclick="resetUsersPassword()">Create New Password</button>
                             </div>
                         </div>
                     </div>
