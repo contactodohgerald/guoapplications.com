@@ -22,14 +22,14 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Verify Email</h2>
+                        <h4>Please Provide Your Account Email To Continue!</h4>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
                                 <div class="err_email error_displayer"></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" id="guoBtn" type="submit" onclick="resetPassword_1()">Send</button>
+                                <button class="guoBtn" id="guoBtn" type="submit" onclick="resetPassword_1()">Send Token To Email</button>
                             </div>
                         </div>
                     </div>

@@ -106,7 +106,7 @@ if(isset($_POST['submit'])){
         <div class="container">
             <!--SECTION HEADING END-->
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
                         <h2>Drop Us an Email</h2>
@@ -147,7 +147,7 @@ if(isset($_POST['submit'])){
                     <!--CONTACT FORM END-->
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <!--LOCATION INFO START-->
                     <div class="kode-location">
                         <h2>Contact Customer Care</h2>

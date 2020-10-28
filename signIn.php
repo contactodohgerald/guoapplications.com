@@ -40,6 +40,7 @@
                             </div>
                             <div class="form-group">
                                 <input  id="password" class="form-control password" type="password" placeholder="Password">
+                                <span toggle="#password-field" class="fa fa-lg fa-eye field-icon Password" onclick="NeededModules.togglePassword('password', 'Password')"></span>
                                 <div class="err_password error_displayer"></div>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">

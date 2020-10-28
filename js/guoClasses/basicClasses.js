@@ -231,7 +231,7 @@ class validatorClass{
             }
             if(i === 'general_error'){
                 //returnFunctions.showSuccessToaster(txt, 'warning');
-                NeededModules.showWarningToaster(txt);
+                NeededModules.showSuccessToaster(txt, 'warning');
                 $(".error_carrier").removeClass('text-danger');
             }else{
                 $('.err_'+i).html(txt).removeClass('hidden');

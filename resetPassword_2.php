@@ -8,7 +8,7 @@
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li><a href="./signIn">Sign In</a></li>
-                <li><a href="./resetPassword_1">Verify Email</a></li>
+                <li><a href="./resetPassword_1">Send Token To Email</a></li>
                 <li class="active">Verify Token</li>
             </ol>
         </div>
@@ -23,7 +23,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Verify Token</h2>
+                        <p class="alert alert-danger">A Reset Password Token Have Been Sent To Your Mail. Please Provide Token To Continue. Didn't See Token? Check Your Junk ? Spam folder</p>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="token" class="form-control email_token" type="number" placeholder="Token">
@@ -33,7 +33,7 @@
                                 <button class="guoBtn" type="submit" onclick="resetPassword_2()">Verify Token</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h3>Didn't Get Token? <button class="guoBtn"  id="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend</button></h3>
+                                <h5>Didn't Get Token? <button class="guoBtn"  id="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend</button></h5>
                             </div>
                         </div>
                     </div>

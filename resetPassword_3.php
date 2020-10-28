@@ -8,8 +8,7 @@
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li><a href="./signIn">Sign In</a></li>
-                <li><a href="./resetPassword_1">Verify Email</a></li>
-                <li><a href="./resetPassword_2">Verify Token</a></li>
+                <li><a href="./resetPassword_1">Send Token To Email</a></li>
                 <li class="active">Reset Password</li>
             </ol>
         </div>
@@ -24,14 +23,16 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Reset Password</h2>
+                        <h2>Create A New Password</h2>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="password_" class="form-control password" type="password" placeholder="Password">
+                                <span toggle="#password-field" class="fa fa-lg fa-eye field-icon Password" onclick="NeededModules.togglePassword('password_', 'Password')"></span>
                                 <div class="err_password error_displayer"></div>
                             </div>
                             <div class="col-md-12 form-group">
                                 <input  id="password" class="form-control password_confirmation" type="password" placeholder="Confirm Password">
+                                <span toggle="#password-field" class="fa fa-lg fa-eye field-icon CPassword" onclick="NeededModules.togglePassword('password', 'CPassword')"></span>
                                 <div class="err_password_confirmation error_displayer"></div>
                             </div>
                             <div class="col-md-12">

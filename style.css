@@ -1548,6 +1548,7 @@ footer{
 	width:100%;
 	background-image:url(images/banner-2.jpg);
 	background-size:cover;
+	opacity: 0.8;
 
 }
 

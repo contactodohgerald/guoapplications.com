@@ -19,7 +19,6 @@ $slide_image_response = json_decode($slide_image);
 //print_r($slide_image_response);
 curl_close($curl)
 
-
 ?>
 
     <!--HEADER END-->
@@ -46,7 +45,7 @@ curl_close($curl)
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <h2 class="text-center">Download <?php print  @$siteName?> and open the doors of fun and knowledge</h2>
-                    <p style="margin-bottom: 6px; font-weight: bold;" class="text-center">Visit Google PlayStore or Apple App Store to download <?php print  @$siteName?>  app </p>
+                    <p style="margin-bottom: 6px; font-weight: bold;" class="text-center">Visit Google PlayStore or Apple App Store to download <?php print  @$siteName?> </p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <a href="<?php print  @$playStore?>">
@@ -69,7 +68,7 @@ curl_close($curl)
             <div class="container">
                 <!--SECTION CONTENT START-->
                 <div class="section-content">
-                    <h2>Getting Started With <span><?php print @$siteName?> </span> app</h2>
+                    <h2>Getting Started With <span><?php print @$siteName?> </span></h2>
                     <p> Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make <?php print @$siteName?> your gateway to it all and have fun doing so.</p>
                 </div>
                 <!--SECTION CONTENT END-->
@@ -77,7 +76,7 @@ curl_close($curl)
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-gift"></i>
-                            <h3><a href="#">Download The App</a></h3>
+                            <h3><a href="#">Download <?php print @$siteName?></a></h3>
                             <p>Visit Google PlayStore or Apple App Store to download and install <?php print @$siteName?> to your device. </p>
                         </div>
                     </div>
@@ -128,7 +127,7 @@ curl_close($curl)
             <div class="container">
                 <div class="section-content">
                     <h2>Download  <span><?php print  @$siteName?> </span>And Enjoy</h2>
-                    <p>Download <?php print  @$siteName?> App for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
+                    <p>Download <?php print  @$siteName?> for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
