@@ -31,7 +31,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Sign Up</h2>
+                        <h4 class="text-uppercase">Sign Up</h4>
                         <div class="">
                             <div class="form-group" >
                                 <input  id="firstName" class="form-control first_name" type="text" placeholder="First Name" style="margin-bottom: 8px">

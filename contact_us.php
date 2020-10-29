@@ -103,13 +103,13 @@ if(isset($_POST['submit'])){
     <!--CONTENT START-->
     <div class="kode-content padding-tb-50">
         <!--TOP AUTHERS START-->
-        <div class="container">
+        <div class="container-fluid">
             <!--SECTION HEADING END-->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4 col-md-offset-2">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Drop Us an Email</h2>
+                        <h4 class="text-uppercase">Email Us</h4>
                         <form action="" method="post">
                             <div class="container-fluid">
                                 <?php if(!empty($msg) || !empty($msg2)){?>
@@ -146,11 +146,10 @@ if(isset($_POST['submit'])){
                     </div>
                     <!--CONTACT FORM END-->
                 </div>
-
                 <div class="col-md-6">
                     <!--LOCATION INFO START-->
                     <div class="kode-location">
-                        <h2>Contact Customer Care</h2>
+                        <h5 class="text-uppercase">Contact Customer Care</h5>
                         <p><?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience.</p>
                     </div>
                     <!--LOCATION INFO END-->
@@ -162,21 +161,21 @@ if(isset($_POST['submit'])){
                                     <i class="fa fa-whatsapp border-red"></i>
                                 </a>
                                 <h4>WhatsApp</h4>
-                                <p> <?php echo $responses->whatsAppPhone ?></p>
+                                <p class="fonts-10"> <?php echo $responses->whatsAppPhone ?></p>
                             </li>
                             <li>
                                 <a href="tel:<?php echo $responses->siteOfficialPhone ?>">
                                     <i class="fa fa-phone border-yellow"></i>
                                 </a>
                                 <h4>Phone</h4>
-                                <p> <?php echo $responses->siteOfficialPhone ?></p>
+                                <p class="fonts-10"> <?php echo $responses->siteOfficialPhone ?></p>
                             </li>
                             <li>
                                 <a href="mailto:<?php echo $responses->siteMail ?>">
                                     <i class="fa fa-envelope border-blue"></i>
                                 </a>
                                 <h4>Email</h4>
-                                <p><?php echo $responses->siteMail ?></p>
+                                <p class="fonts-10"><?php echo $responses->siteMail ?></p>
                             </li>
                         </ul>
                         <?php  }; ?>

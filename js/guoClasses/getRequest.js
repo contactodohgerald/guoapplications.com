@@ -1,3 +1,6 @@
+$(document).ready(function () {
+    getLoggedInUserDetails();
+})
 
 async function getLoggedInUserDetails() {
     let getUserToken = await NeededModules.getRequest('getSession.php?get_user_token');
@@ -25,6 +28,8 @@ async function getLoggedInUserDetails() {
         $('.userEmail').html((email === null)?'None':email);
         $('.userCountry').html((country === null)?'None':NeededModules.capitalizeFirstLetter(country));
         $('.joinSince').html((created_at === null)?'None':NeededModules.returnDateDetails_2(created_at));
+
+        $('.nameHolder').html(first_name);
 
     }
 

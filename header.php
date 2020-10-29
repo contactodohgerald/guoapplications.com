@@ -53,11 +53,18 @@
                             <a href="faq">FAQ</a>
                         </li>-->
                       <?php  if (isset($_SESSION['api_Token'])){ ?>
-                          <li onclick="NeededModules.bringOutModalMain('.user-log-out')">
-                              <a href="javascript:;">Sign Out</a>
+                          <li>
+                              <a class="modal-trigger" href="#modal1">Sign Out</a>
                           </li>
                           <li class="last">
-                              <a href="profile" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Profile</a>
+                              <a href="profile">
+                                  <div class="loggedInUserHolder">
+                                      <div class="userImages loggedInUser"></div>
+                                      <div class="loggedInUserNameHold">
+                                          <h6 class="nameHolder"></h6>
+                                      </div>
+                                  </div>
+                              </a>
                           </li>
                       <?php }else{ ?>
                           <li>
@@ -85,11 +92,18 @@
                             <a href="faq">FAQ</a>
                         </li>-->
                         <?php  if (isset($_SESSION['api_Token'])){ ?>
-                            <li onclick="NeededModules.bringOutModalMain('.user-log-out')">
-                                <a href="javascript:;">Sign Out</a>
+                            <li>
+                                <a class="modal-trigger" href="#modal1">Sign Out</a>
                             </li>
                             <li class="last">
-                                <a href="profile" style="color:#f05a23; font-weight: bold; text-transform: uppercase;">Profile</a>
+                                <a href="profile">
+                                    <div class="loggedInUserHolder">
+                                        <div class="userImages loggedInUser"></div>
+                                        <div class="loggedInUserNameHold">
+                                            <h6 class="nameHolder"></h6>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                         <?php }else{ ?>
                             <li>

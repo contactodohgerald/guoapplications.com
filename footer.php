@@ -1,6 +1,6 @@
 
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <!--TEXT WIDGET START-->
             <div class="col-md-4">

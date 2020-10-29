@@ -31,8 +31,8 @@ curl_close($curl)
                 <img src="<?php echo $slideImage->image_path.$get_response->images?>" alt="<?php print  @$siteName?>">
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
-                    <h4 style="color: white; text-transform: uppercase"><?php print  @$slogan?></h4>
-                    <p><?php echo $get_response->description?></p>
+                    <h4 style="color: white; text-transform: uppercase; font-size: 20px; font-weight: bold"><?php print  @$slogan?></h4>
+                    <p style="font-weight: bold"><?php echo $get_response->description?></p>
                 </div>
             </li>
             <?php  }; ?>
@@ -42,22 +42,24 @@ curl_close($curl)
     <!--BUT NOW START-->
     <section class="buy-template">
         <div class="container">
+            <?php   foreach ($response_array->return_data as $responses){ ?>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <h2 class="text-center">Download <?php print  @$siteName?> and open the doors of fun and knowledge</h2>
                     <p style="margin-bottom: 6px; font-weight: bold;" class="text-center">Visit Google PlayStore or Apple App Store to download <?php print  @$siteName?> </p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
-                    <a href="<?php print  @$playStore?>">
+                    <a href="<?php echo $responses->playStoreUrl?>">
                         <img src="images/stores/coming-soon_playstore.png" alt="<?php print  @$siteName?>" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
-                    <a href="<?php print  @$appleUrl?>">
+                    <a href="<?php echo $responses->appleStoreUrl?>">
                         <img src="images/stores/coming_soon_apple.png" alt="<?php print  @$siteName?>" class="img-responsive">
                     </a>
                 </div>
             </div>
+            <?php  }; ?>
         </div>
     </section>
     <!--BUT NOW END-->
@@ -129,18 +131,20 @@ curl_close($curl)
                     <h2>Download  <span><?php print  @$siteName?> </span>And Enjoy</h2>
                     <p>Download <?php print  @$siteName?> for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
                 </div>
+                <?php   foreach ($response_array->return_data as $responses){ ?>
                 <div class="row">
                     <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
-                        <a href="<?php print  @$playStore?>">
+                        <a href="<?php echo $responses->playStoreUrl?>">
                             <img src="images/stores/coming-soon_playstore.png" alt="<?php print  @$siteName?>" class="img-responsive">
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
-                        <a href="<?php print  @$appleUrl?>">
+                        <a href="<?php echo $responses->appleStoreUrl?>">
                             <img src="images/stores/coming_soon_apple.png" alt="<?php print  @$siteName?>" class="img-responsive">
                         </a>
                     </div>
                 </div>
+                <?php  }; ?>
             </div>
         </section>
     </div>

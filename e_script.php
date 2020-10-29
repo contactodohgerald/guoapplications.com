@@ -23,5 +23,11 @@
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>
+
 </body>
 </html>

@@ -89,29 +89,16 @@ curl_close($curl)
    <!-- <script src="https://www.google.com/recaptcha/api.js?render=<?php /*echo SITE_KEY*/?>"></script>-->
 </head>
 
-<!-- Modal -->
-<div class="modal fade jackInTheBox user-log-out" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header" style="background-color: #f05a23 !important;">
-                <h5 class="modal-title" id="exampleModalLabel" style="color:white !important; ">Logout Prompt</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12">
-                        <h3 class="text-center m-0">Do You Really Want to Sign Out?</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="logout">
-                    <button type="button" class="btn btn-primary">Logout</button>
-                </a>
-            </div>
-        </div>
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="text-center">Logout Prompt</h4>
+        <h6 class="text-center m-0">Do You Really Want to Sign Out?</h6>
+    </div>
+    <div class="modal-footer">
+        <a href="logout">
+            <button type="button" class="btn btn-primary">Logout</button>
+        </a>
+        <button class="btn modal-close">Close</button>
     </div>
 </div>

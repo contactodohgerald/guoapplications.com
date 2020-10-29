@@ -17,7 +17,7 @@ if (!isset($_SESSION['api_Token'])){
             <h2>User Profile</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
-                <li><a href="./login">Sign In</a></li>
+                <li><a href="./signIn">Sign In</a></li>
                 <li class="active">User Profile</li>
             </ol>
         </div>
@@ -29,27 +29,30 @@ if (!isset($_SESSION['api_Token'])){
         <section class="kode-author-detail-2">
             <div class="container">
                 <div class="kode-thumb">
-
+                    <div class="user_image_holder userImages"></div>
+                    <a class="modal-trigger" href="#modal1">
+                        <button class="btn guoBtn">Sign Out</button>
+                    </a>
                 </div>
                 <div class="kode-text">
                     <h2 class="userName"></h2>
                     <div class="contact-box">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-12">
                                 <table>
                                     <tr>
                                         <td><i class="fa fa-phone"></i></td>
-                                        <td>Phone No:</td>
+                                        <td>My Phone:</td>
                                         <td class="userPhone"></td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa fa-envelope-o"></i></td>
-                                        <td>Email ID:</td>
+                                        <td>My Email:</td>
                                         <td class="userEmail"></td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa fa-fax"></i></td>
-                                        <td>Country:</td>
+                                        <td>My Country:</td>
                                         <td class="userCountry"></td>
                                     </tr>
                                     <tr>
@@ -76,18 +79,20 @@ if (!isset($_SESSION['api_Token'])){
                     <div class="kode-icon"><i class="fa fa-book"></i></div>
                 </div>
                 <!--SECTION HEADING END-->
+                <?php   foreach ($response_array->return_data as $responses){ ?>
                 <div class="row">
                     <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
-                        <a href="<?php print  @$playStore?>">
+                        <a href="<?php echo $responses->playStoreUrl?>">
                             <img src="images/stores/coming-soon_playstore.png" alt="<?php print  @$siteName?>" class="img-responsive">
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
-                        <a href="<?php print  @$appleUrl?>">
+                        <a href="<?php echo $responses->appleStoreUrl?>">
                             <img src="images/stores/coming_soon_apple.png" alt="<?php print  @$siteName?>" class="img-responsive">
                         </a>
                     </div>
                 </div>
+                <?php  }; ?>
             </div>
         </section>
         <!--GIFT CARD SECTION END-->
@@ -98,9 +103,3 @@ if (!isset($_SESSION['api_Token'])){
 <?php require_once ("footer.php")?>
 
 <?php require_once ("e_script.php")?>
-
-<script>
-    $(document).ready(function () {
-        getLoggedInUserDetails();
-    })
-</script>

@@ -23,7 +23,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Create A New Password</h2>
+                        <h5 class="text-uppercase">Create A New Password</h5>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="password_" class="form-control password" type="password" placeholder="Password">

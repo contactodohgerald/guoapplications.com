@@ -21,7 +21,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h2>Sign In</h2>
+                        <h4 class="text-uppercase">Sign In</h4>
                         <div class="row container-fluid">
                             <?php if(isset($_GET['error'])){ ?>
                                 <div class="row">
