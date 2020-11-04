@@ -14,11 +14,11 @@
 
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Sign Up</h2>
+            <!--<h2>Sign Up</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li class="active">Sign Up</li>
-            </ol>
+            </ol>-->
         </div>
         <?php require_once ("downloadAppHold.php")?>
     </div>
@@ -34,6 +34,10 @@
                         <h4 class="text-uppercase">Sign Up</h4>
                         <div class="">
                             <div class="form-group" >
+                                <input  id="referral_id" class="form-control referred_unique_id" type="text" placeholder="Referral Id (Optional)" style="margin-bottom: 8px">
+                                <div class="err_referred_unique_id error_displayer"></div>
+                            </div>
+                            <div class="form-group" >
                                 <input  id="firstName" class="form-control first_name" type="text" placeholder="First Name" style="margin-bottom: 8px">
                                 <div class="err_first_name error_displayer"></div>
                             </div>
@@ -46,7 +50,7 @@
                                 <div class="err_email error_displayer"></div>
                             </div>
                             <div class="col-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group" style="padding-left: 0">
-                                <select id="countryCode" class="form-control country">
+                                <select id="countryCode" style="height: 3rem;" class="form-control country">
                                     <option value='+376/Andorra' >+376 (Andorra)</option>
                                     <option value='+971/United Arab Emirates ' >+971 (United Arab Emirates )</option>
                                     <option value='+93/Afghanistan' >+93 Afghanistan</option>
@@ -320,13 +324,13 @@
     </div>
     <!--WRAPPER END-->
 <?php require_once ("e_script.php")?>
-<script>
+<!--<script>
     function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-            grecaptcha.execute('<?php echo SITE_KEY;?>', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('<?php /*echo SITE_KEY;*/?>', {action: 'submit'}).then(function(token) {
                 // Add your logic to submit to your backend server here.
             });
         });
     }
-</script>
+</script>-->

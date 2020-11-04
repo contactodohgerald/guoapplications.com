@@ -10,19 +10,25 @@
                     <?php   foreach ($response_array->return_data as $responses){ ?>
                     <ul>
                         <li>
-                            <i class="fa fa-whatsapp" style="color: #f05a23"></i>
+                            <a href="whatsapp://send?phone=<?php echo $responses->whatsAppPhone ?>&text=How Can We Be Of Service?">
+                                <i class="fa fa-whatsapp" style="color: #f05a23"></i>
+                            </a>
                             <p>
                                 <a href="whatsapp://send?phone=<?php echo $responses->whatsAppPhone ?>&text=How Can We Be Of Service?"><?php echo $responses->whatsAppPhone ?></a>
                             </p>
                         </li>
                         <li>
-                            <i class="fa fa-phone" style="color: #1b1363"></i>
+                            <a href="tel:<?php echo $responses->siteOfficialPhone ?>">
+                                <i class="fa fa-phone" style="color: #1b1363"></i>
+                            </a>
                             <p>
                                 <a href="tel:<?php echo $responses->siteOfficialPhone ?>"><?php echo $responses->siteOfficialPhone ?></a>
                             </p>
                         </li>
                         <li>
-                            <i class="fa fa-envelope-o" style="color: #2d3092"></i>
+                            <a href="mailto:<?php echo $responses->siteMail ?>">
+                                <i class="fa fa-envelope-o" style="color: #2d3092"></i>
+                            </a>
                             <p>
                                 <a href="mailto:<?php echo $responses->siteMail ?>"><?php echo $responses->siteMail ?></a>
                             </p>

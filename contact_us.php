@@ -92,11 +92,11 @@ if(isset($_POST['submit'])){
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Contact Us</h2>
+           <!-- <h2>Contact Us</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li class="active">Contact Us</li>
-            </ol>
+            </ol>-->
         </div>
         <?php require_once ("downloadAppHold.php")?>
     </div>
@@ -109,9 +109,9 @@ if(isset($_POST['submit'])){
                 <div class="col-md-4 col-md-offset-2">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h4 class="text-uppercase">Email Us</h4>
                         <form action="" method="post">
                             <div class="container-fluid">
+                                <h5 class="text-uppercase">Email Us</h5>
                                 <?php if(!empty($msg) || !empty($msg2)){?>
                                     <div class="row">
                                         <div id="go" class=" col-lg-12">
@@ -161,21 +161,27 @@ if(isset($_POST['submit'])){
                                     <i class="fa fa-whatsapp border-red"></i>
                                 </a>
                                 <h4>WhatsApp</h4>
-                                <p class="fonts-10"> <?php echo $responses->whatsAppPhone ?></p>
+                                <a href="whatsapp://send?phone=<?php echo $responses->whatsAppPhone ?>&text=How Can We Be Of Service?">
+                                    <p style="color: black; font-size: 12px" class="fonts-10"> <?php echo $responses->whatsAppPhone ?></p>
+                                </a>
                             </li>
                             <li>
                                 <a href="tel:<?php echo $responses->siteOfficialPhone ?>">
                                     <i class="fa fa-phone border-yellow"></i>
                                 </a>
                                 <h4>Phone</h4>
-                                <p class="fonts-10"> <?php echo $responses->siteOfficialPhone ?></p>
+                                <a href="tel:<?php echo $responses->siteOfficialPhone ?>">
+                                    <p style="color: black; font-size: 12px" class="fonts-10"> <?php echo $responses->siteOfficialPhone ?></p>
+                                </a>
                             </li>
                             <li>
                                 <a href="mailto:<?php echo $responses->siteMail ?>">
                                     <i class="fa fa-envelope border-blue"></i>
                                 </a>
                                 <h4>Email</h4>
-                                <p class="fonts-10"><?php echo $responses->siteMail ?></p>
+                                <a href="mailto:<?php echo $responses->siteMail ?>">
+                                    <p style="color: black; font-size: 12px" class="fonts-10"><?php echo $responses->siteMail ?></p>
+                                </a>
                             </li>
                         </ul>
                         <?php  }; ?>

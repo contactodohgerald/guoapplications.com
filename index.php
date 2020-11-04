@@ -32,7 +32,7 @@ curl_close($curl)
                 <div class="kode-caption">
                     <h2><?php print  @$siteName?></h2>
                     <h4 style="color: white; text-transform: uppercase; font-size: 20px; font-weight: bold"><?php print  @$slogan?></h4>
-                    <p style="font-weight: bold"><?php echo $get_response->description?></p>
+                    <p><?php echo $get_response->description?></p>
                 </div>
             </li>
             <?php  }; ?>
@@ -86,7 +86,7 @@ curl_close($curl)
                         <div class="kode-service orangeText">
                             <i class="fa fa-book"></i>
                             <h3><a href="#">Sign Up</a></h3>
-                            <p>Sign up with <?php print @$siteName?> in a simple, easy form and navigate our smart, user-friendly features.</p>
+                            <p>Sign up with <?php print @$siteName?> in just a few clicks and navigate our smart, user-friendly features.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -107,7 +107,7 @@ curl_close($curl)
                     <div class="col-md-4">
                         <div class="count-up">
                             <span class="counter circle">15</span>
-                            <p>MOST POPULAR DOWNLOAD </p>
+                            <p>TOTAL BOOKS </p>
                         </div>
                     </div>
                     <div class="col-md-4">

@@ -14,12 +14,12 @@ if (!isset($_SESSION['api_Token'])){
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>User Profile</h2>
+           <!-- <h2>User Profile</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li><a href="./signIn">Sign In</a></li>
                 <li class="active">User Profile</li>
-            </ol>
+            </ol>-->
         </div>
         <?php require_once ("downloadAppHold.php")?>
     </div>
@@ -29,7 +29,7 @@ if (!isset($_SESSION['api_Token'])){
         <section class="kode-author-detail-2">
             <div class="container">
                 <div class="kode-thumb">
-                    <div class="user_image_holder userImages"></div>
+                    <div class="user_image_holder userImages" style="margin-bottom: 20px"></div>
                     <a class="modal-trigger" href="#modal1">
                         <button class="btn guoBtn">Sign Out</button>
                     </a>
@@ -56,7 +56,7 @@ if (!isset($_SESSION['api_Token'])){
                                         <td class="userCountry"></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa fa-times"></i></td>
+                                        <td><i class="fa fa-check"></i></td>
                                         <td>Joined Since:</td>
                                         <td class="joinSince"></td>
                                     </tr>

@@ -4,11 +4,11 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Sign In</h2>
+           <!-- <h2>Sign In</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li class="active">Sign In</li>
-            </ol>
+            </ol>-->
         </div>
         <?php require_once ("downloadAppHold.php")?>
     </div>
@@ -21,8 +21,8 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h4 class="text-uppercase">Sign In</h4>
                         <div class="row container-fluid">
+                            <h4 class="text-uppercase">Sign In</h4>
                             <?php if(isset($_GET['error'])){ ?>
                                 <div class="row">
                                     <div id="go" class=" col-lg-12">

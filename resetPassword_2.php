@@ -4,13 +4,13 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Verify Token</h2>
+          <!--  <h2>Verify Token</h2>
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li><a href="./signIn">Sign In</a></li>
                 <li><a href="./resetPassword_1">Send Token To Email</a></li>
                 <li class="active">Verify Token</li>
-            </ol>
+            </ol>-->
         </div>
         <?php require_once ("downloadAppHold.php")?>
     </div>

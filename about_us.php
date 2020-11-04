@@ -5,11 +5,11 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>About Us</h2>
-            <ol class="breadcrumb">
-                <li><a href="./">Home</a></li>
-                <li class="active">About Us</li>
-            </ol>
+            <!-- <h2>About Us</h2>
+             <ol class="breadcrumb">
+                 <li><a href="./">Home</a></li>
+                 <li class="active">About Us</li>
+             </ol>-->
         </div>
         <?php require_once ("downloadAppHold.php")?>
     </div>

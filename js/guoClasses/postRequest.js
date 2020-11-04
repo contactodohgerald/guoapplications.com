@@ -8,7 +8,7 @@ function onLoad() {
 
 async function registerUser() {
 
-    let firstName, lastName, email, adminType, phone, country, password, passwordConfirmation, Phone, code;
+    let firstName, lastName, email, adminType, phone, country, password, passwordConfirmation, Phone, code, referred_unique_id;
 
     firstName = $('.first_name').val();
     lastName = $('.last_name').val();
@@ -17,6 +17,7 @@ async function registerUser() {
     country =  $('.country').val();
     password = $('.password').val();
     passwordConfirmation = $('.password_confirmation').val();
+    referred_unique_id = $('.referred_unique_id').val();
     adminType = 'user';
 
     let validatorDetails = new validatorClass();
@@ -49,7 +50,9 @@ async function registerUser() {
 
     grecaptcha.execute();
     NeededModules.disableButton();
-    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register', {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, user_type:adminType});
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register',
+        {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, referred_unique_id:referred_unique_id, user_type:adminType}
+        );
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {
@@ -72,15 +75,12 @@ async function verifyEmails(){
     email = NeededModules.getTheUniqueKeyFromTheUrl();
     token = $('.email_token').val();
 
-    let errorHold = {}, er = [];
-    if (Validator.emptyField(token, 'empty') === false){
-        er.push("<p class='f-size text-center'><span class='text-danger'>*</span>The Token Field is required!</p>");
-        errorHold['email_token'] = er;
-        Validator.errorChecker = 1;
-    }
-
-    if(Validator.errorChecker === 1){
-        NeededModules.reportError(errorHold);
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        token+'|email_token|Token|empty,number',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
         return;
     }
 
@@ -90,7 +90,7 @@ async function verifyEmails(){
 
     if (status === false) {
         NeededModules.unDisableButton();
-        NeededModules.handleErrorStatement(error_statement);
+        validatorDetails.handleErrorStatement(error_statement);
     }
 
     if (status === true){

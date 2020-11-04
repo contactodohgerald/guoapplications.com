@@ -92,13 +92,13 @@ curl_close($curl)
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4 class="text-center">Logout Prompt</h4>
-        <h6 class="text-center m-0">Do You Really Want to Sign Out?</h6>
+        <h4 class="text-center">Sign Out Prompt</h4>
+        <h6 class="text-center m-0">Are You Sure You Want To Sign Out?</h6>
     </div>
     <div class="modal-footer">
         <a href="logout">
-            <button type="button" class="btn btn-primary">Logout</button>
+            <button type="button" class="btn btn-primary">Yes</button>
         </a>
-        <button class="btn modal-close">Close</button>
+        <button class="btn modal-close">No</button>
     </div>
 </div>
