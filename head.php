@@ -28,6 +28,23 @@ $response_array = json_decode($response);
 curl_close($curl)
 
 ?>
+
+<?php
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'https://guo.guoapplications.com/api/getMobileUserDetails?token='.(isset($_SESSION['api_Token'])?$_SESSION['api_Token']:''),
+    CURLOPT_USERAGENT => 'Get About Us Details',
+
+]);
+
+$loggedInUserDetails = curl_exec($curl);
+
+$loggedInUserDetails_array = json_decode($loggedInUserDetails);
+
+curl_close($curl)
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

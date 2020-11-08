@@ -27,15 +27,18 @@ if (!isset($_SESSION['api_Token'])){
     <div class="kode-content">
         <!--AUTHOR DETAIL SECTION START-->
         <section class="kode-author-detail-2">
+            <?php   foreach ($loggedInUserDetails_array->return_data as $response){ ?>
             <div class="container">
                 <div class="kode-thumb">
-                    <div class="user_image_holder userImages" style="margin-bottom: 20px"></div>
+                    <div class="user_image_holder userImages" style="margin-bottom: 20px">
+                        <img src="<?php echo $response->user_image_path?><?php echo $response->profile_pix?>" alt="<?php echo $response->first_name?>">
+                    </div>
                     <a class="modal-trigger" href="#modal1">
                         <button class="btn guoBtn">Sign Out</button>
                     </a>
                 </div>
                 <div class="kode-text">
-                    <h2 class="userName"></h2>
+                    <h2><?php echo $response->first_name?> <?php echo $response->last_name?></h2>
                     <div class="contact-box">
                         <div class="row">
                             <div class="col-12">
@@ -43,22 +46,22 @@ if (!isset($_SESSION['api_Token'])){
                                     <tr>
                                         <td><i class="fa fa-phone"></i></td>
                                         <td>My Phone:</td>
-                                        <td class="userPhone"></td>
+                                        <td><?php echo $response->phone?></td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa fa-envelope-o"></i></td>
                                         <td>My Email:</td>
-                                        <td class="userEmail"></td>
+                                        <td><?php echo $response->email?></td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa fa-fax"></i></td>
                                         <td>My Country:</td>
-                                        <td class="userCountry"></td>
+                                        <td><?php echo $response->country?></td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa fa-check"></i></td>
                                         <td>Joined Since:</td>
-                                        <td class="joinSince"></td>
+                                        <td><?php echo date("d-m-Y", strtotime($response->created_at))?></td>
                                     </tr>
                                 </table>
                             </div>
@@ -66,6 +69,7 @@ if (!isset($_SESSION['api_Token'])){
                     </div>
                 </div>
             </div>
+            <?php } ?>
         </section>
         <!--AUTHOR DETAIL SECTION END-->
         <!--GIFT CARD SECTION START-->

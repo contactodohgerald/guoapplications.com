@@ -1,12 +1,6 @@
 
 <body>
-<div id="loader-wrapper">
-    <div id="loader"></div>
-
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-
-</div>
+<?php require_once ("loader.php")?>
 <!--WRAPPER START-->
 <div class="wrapper">
     <!--HEADER START-->
@@ -62,12 +56,16 @@
                             </li>
                             <li class="last">
                                 <a href="profile">
+                                    <?php   foreach ($loggedInUserDetails_array->return_data as $response){ ?>
                                     <div class="loggedInUserHolder">
-                                        <div class="userImages loggedInUser"></div>
+                                        <div class="loggedInUser">
+                                            <img src="<?php echo $response->user_image_path?><?php echo $response->profile_pix?>" alt="<?php echo $response->first_name?>">
+                                        </div>
                                         <div class="loggedInUserNameHold">
-                                            <h6 class="nameHolder"></h6>
+                                            <h6><?php echo $response->first_name?></h6>
                                         </div>
                                     </div>
+                                    <?php } ?>
                                 </a>
                             </li>
                         <?php }else{ ?>
@@ -101,12 +99,16 @@
                             </li>
                             <li class="last">
                                 <a href="profile">
-                                    <div class="loggedInUserHolder">
-                                        <div class="userImages loggedInUser"></div>
-                                        <div class="loggedInUserNameHold">
-                                            <h6 class="nameHolder"></h6>
+                                    <?php   foreach ($loggedInUserDetails_array->return_data as $response){ ?>
+                                        <div class="loggedInUserHolder">
+                                            <div class="loggedInUser">
+                                                <img src="<?php echo $response->user_image_path?><?php echo $response->profile_pix?>" alt="<?php echo $response->first_name?>">
+                                            </div>
+                                            <div class="loggedInUserNameHold">
+                                                <h6><?php echo $response->first_name?></h6>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php } ?>
                                 </a>
                             </li>
                         <?php }else{ ?>
