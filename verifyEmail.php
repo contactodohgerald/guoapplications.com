@@ -4,7 +4,8 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-          <!--  <h2>Email Token</h2>
+            <h2>Email Token</h2>
+          <!--  
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li><a href="./signUp">Sign Up</a></li>

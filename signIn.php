@@ -4,7 +4,8 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-           <!-- <h2>Sign In</h2>
+            <h2>Sign In</h2>
+           <!--
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li class="active">Sign In</li>
@@ -22,7 +23,7 @@
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
                         <div class="row container-fluid">
-                            <h4 class="text-uppercase">Sign In</h4>
+                            <h5 class="text-uppercase">Sign In</h5>
                             <?php if(isset($_GET['error'])){ ?>
                                 <div class="row">
                                     <div id="go" class=" col-lg-12">
@@ -44,7 +45,7 @@
                                 <div class="err_password error_displayer"></div>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h5>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h5>
+                                <h6>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h6>
                             </div>
                             <div class="form-group">
                                 <button class="guoBtn" id="guoBtn" type="submit" onclick="loginUser()">Sign In</button>

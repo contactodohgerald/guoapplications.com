@@ -151,11 +151,15 @@ async function loginUser(){
 
     if (status === true){
         NeededModules.unDisableButton();
-        let {token} = return_data; let {original} = token; let {token:user_token} = original;
+        let {token, user_details} = return_data;
+        let {original} = token;
+        let {token:user_token} = original;
+        let {unique_id} = user_details;
 
         let save_user_token = await NeededModules.postRequest('setSession.php',
             {
                 api_token:user_token,
+                uniqueId:unique_id,
             });
 
         let result = JSON.parse(save_user_token);
@@ -166,6 +170,63 @@ async function loginUser(){
                 window.location.href = `${Routes.profileUrl}`;
             }, 2000)
         }
+    }
+}
+
+//handles the user's / admin's profile details
+async function updateUser() {
+    let getUserLoggedInDetails = await NeededModules.getRequest('getSession.php?get_user_token');
+    let {api_token, user_unique_id} = getUserLoggedInDetails;
+
+    let firstName, lastName, phone, country, city, address, gender, Phone, code;
+
+    firstName = $('.first_name').val();
+    lastName = $('.last_name').val();
+    phone = $('.phone').val();
+    country =  $('.country').val();
+    gender = $('.genders').val();
+    city = $('.city').val();
+    address = $('.address').val();
+
+    let validatorDetails = new validatorClass();
+    //['value|className|fieldName|type', 'value|className|fieldName|type1,type2']
+    if(! await validatorDetails.callValidator([
+        firstName+'|first_name|First Name|empty',
+        lastName+'|last_name|Last Name|empty',
+        phone+'|phone|Phone Number|empty,number',
+        country+'|country|Country|empty',
+    ])){
+        validatorDetails.handleErrorStatement(validatorDetails.errors);
+        return;
+    }
+
+    let phoneCode = country.split('/')[0];
+
+    let countryCode = country.split('/')[1];
+
+    if (phone.charAt(0) == 0){
+        Phone = phone.substring(1);
+        code = `${phoneCode}${Phone}`;
+    }else if (phone.charAt(0) === '+') {
+        code = `${phone}`;
+    }else {
+        code = `${phoneCode}${phone}`;
+    }
+
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/updateUserProfile/'+user_unique_id, {first_name:firstName, last_name:lastName, phone:code, country:countryCode, gender:gender, city:city, address:address, token:api_token});
+    let {status, error_statement, success_message} = thePostData;
+
+    if (status === false) {
+        NeededModules.unDisableButton();
+        validatorDetails.handleErrorStatement(error_statement);
+    }
+
+    if (status === true){
+        NeededModules.unDisableButton();
+        NeededModules.showSuccessToaster(success_message, 'success');
+        setTimeout(function () {
+            window.location.reload(true);
+        }, 2000)
     }
 }
 

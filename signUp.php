@@ -14,7 +14,8 @@
 
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <!--<h2>Sign Up</h2>
+            <h2>Sign Up</h2>
+            <!--
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li class="active">Sign Up</li>
@@ -31,10 +32,10 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h4 class="text-uppercase">Sign Up</h4>
+                        <h5 class="text-uppercase">Sign Up</h5>
                         <div class="">
                             <div class="form-group" >
-                                <input  id="referral_id" class="form-control referred_unique_id" type="text" placeholder="Referral Id (Optional)" style="margin-bottom: 8px">
+                                <input  id="referral_id" class="form-control referred_unique_id" type="text" placeholder="Referral Code (Optional)" style="margin-bottom: 8px">
                                 <div class="err_referred_unique_id error_displayer"></div>
                             </div>
                             <div class="form-group" >

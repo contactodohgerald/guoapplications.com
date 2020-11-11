@@ -5,7 +5,8 @@
 <!--BANNER START-->
 <div class="kode-inner-banner">
     <div class="kode-page-heading">
-       <!-- <h2>Terms & Condition</h2>
+        <h2>Terms & Condition</h2>
+       <!--
         <ol class="breadcrumb">
             <li><a href="./">Home</a></li>
             <li class="active">Terms & Condition</li>
@@ -19,13 +20,14 @@
     <section class="kode-bio">
         <div class="container">
             <div class="section-heading-1">
-                <h2> Biography</h2>
-                <div class="kode-icon"><i class="fa fa-book"></i></div>
+                <h2> Terms & Conditions</h2>
+                <div class="kode-icon"><i class="fa fa-book" style="color:#f05a23;"></i></div>
             </div>
+            <?php   foreach ($response_array->return_data as $responses){ ?>
             <div class="kode-text">
-                <p>Pages you view in incognito tabs won’t stick around in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs. Any files you download or bookmarks you create will be kept cookie store, or search history after you’ve closed all of your incognito tabs. cookie store, or search history after you’ve closed all of your incognito tabs. in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs</p>
+                <p><?php echo $responses->terms_and_condition?></p>
             </div>
-            <div class="kode-text">
+          <!--  <div class="kode-text">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Early Life and Education</h2>
@@ -36,35 +38,13 @@
                         <p>Pages you view in incognito tabs won’t stick around in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs. Any files you download or bookmarks you create will be kept cookie store, or search history after you’ve closed all of your incognito tabs. cookie store, or search history after you’ve closed all of your incognito tabs. in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
+            <?php } ?>
         </div>
     </section>
     <!--TERMS & CONDITION SECTION END-->
     <!--GIFT CARD SECTION START-->
-    <section class="lib-textimonials">
-        <div class="container">
-            <!--SECTION HEADING START-->
-            <div class="section-heading-1 dark-sec">
-                <h2>Download <?php print  @$siteName?> & Enjoy</h2>
-                <p>You Are Logged In, Download <?php print  @$siteName?> App for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!
-                </p>
-                <div class="kode-icon"><i class="fa fa-book"></i></div>
-            </div>
-            <!--SECTION HEADING END-->
-            <div class="row">
-                <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
-                    <a href="<?php print  @$playStore?>">
-                        <img src="images/stores/coming-soon_playstore.png" alt="<?php print  @$siteName?>" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <a href="<?php print  @$appleUrl?>">
-                        <img src="images/stores/coming_soon_apple.png" alt="<?php print  @$siteName?>" class="img-responsive">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php require_once ("testimonies.php")?>
     <!--GIFT CARD SECTION END-->
 </div>
 <!--CONTENT END-->

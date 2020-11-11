@@ -4,7 +4,8 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-          <!--  <h2>Verify Email</h2>
+            <h2>Verify Email</h2>
+          <!--
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
                 <li><a href="./signIn">Sign In</a></li>
@@ -22,7 +23,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h5>Please Provide Your Account Email To Continue!</h5>
+                        <h6>Please Provide Your Account Email To Continue!</h6>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">

@@ -1,6 +1,7 @@
 <?php
 if (!isset($_SESSION['api_Token'])){
-    header('location:./');
+    $message = 'You Logged Out Successfully';
+    header('location:signIn?error='.$message);
 }
 
 session_start();

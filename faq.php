@@ -21,7 +21,8 @@ curl_close($curl)
 <!--BANNER START-->
 <div class="kode-inner-banner">
     <div class="kode-page-heading">
-       <!-- <h2>FAQ</h2>
+        <h2>FAQ</h2>
+       <!--
         <ol class="breadcrumb">
             <li><a href="./">Home</a></li>
             <li class="active">FAQ</li>
