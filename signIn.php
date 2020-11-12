@@ -11,8 +11,8 @@
                 <li class="active">Sign In</li>
             </ol>-->
         </div>
-        <?php require_once ("downloadAppHold.php")?>
     </div>
+<?php require_once ("downloadAppHold.php")?>
     <!--CONTENT START-->
     <div class="kode-content padding-tb-50">
         <!--TOP AUTHERS START-->
@@ -44,7 +44,7 @@
                                 <span toggle="#password-field" class="fa fa-lg fa-eye field-icon Password" onclick="NeededModules.togglePassword('password', 'Password')"></span>
                                 <div class="err_password error_displayer"></div>
                             </div>
-                            <div class="col-md-12" style="margin-top: 10px">
+                            <div class="form-group" style="margin-top: 10px">
                                 <h6>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h6>
                             </div>
                             <div class="form-group">

@@ -103,7 +103,7 @@ curl_close($curl)
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-   <!-- <script src="https://www.google.com/recaptcha/api.js?render=<?php /*echo SITE_KEY*/?>"></script>-->
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=<?php /*echo SITE_KEY*/?>"></script>-->
 </head>
 
 <!-- Modal Structure -->

@@ -13,8 +13,8 @@
                 <li class="active">Verify Token</li>
             </ol>-->
         </div>
-        <?php require_once ("downloadAppHold.php")?>
     </div>
+<?php require_once ("downloadAppHold.php")?>
     <!--CONTENT START-->
     <div class="kode-content padding-tb-50">
         <!--TOP AUTHERS START-->

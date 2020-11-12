@@ -11,9 +11,9 @@
                 <li class="active">About Us</li>
             </ol>-->
         </div>
-        <?php require_once ("downloadAppHold.php")?>
     </div>
     <!--BANNER END-->
+<?php require_once ("downloadAppHold.php")?>
     <!--CONTENT START-->
 <?php   foreach ($response_array->return_data as $responses){ ?>
     <div class="kode-content">

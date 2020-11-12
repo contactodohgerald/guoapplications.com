@@ -6,8 +6,8 @@
         <div class="kode-page-heading " style="margin-bottom: 15%">
             <h2>Success Page</h2>
         </div>
-       <!-- --><?php /*require_once ("downloadAppHold.php")*/?>
     </div>
+    <!-- --><?php /*require_once ("downloadAppHold.php")*/?>
     <!--CONTENT START-->
     <div class="kode-content" style="margin: 0; padding: 0">
         <!--TOP AUTHERS START-->

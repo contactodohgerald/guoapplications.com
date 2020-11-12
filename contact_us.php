@@ -99,8 +99,8 @@ if(isset($_POST['submit'])){
                 <li class="active">Contact Us</li>
             </ol>-->
         </div>
-        <?php require_once ("downloadAppHold.php")?>
     </div>
+<?php require_once ("downloadAppHold.php")?>
     <!--CONTENT START-->
     <div class="kode-content padding-tb-50">
         <!--TOP AUTHERS START-->

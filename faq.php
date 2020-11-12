@@ -28,9 +28,9 @@ curl_close($curl)
             <li class="active">FAQ</li>
         </ol>-->
     </div>
-    <?php require_once ("downloadAppHold.php")?>
 </div>
 <!--BANNER END-->
+<?php require_once ("downloadAppHold.php")?>
 <!--CONTENT START-->
     <div class="kode-content">
         <!--ABOUT INFO SECTION START-->

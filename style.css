@@ -137,7 +137,7 @@ section.kode-services-section{
 	color:#777;
 }
 section.buy-template{
-	padding:20px 0px;
+	padding:10px 0px;
 }
 .buy-template .kode-btns{
 	margin-top:7px;
@@ -357,9 +357,9 @@ header{
 
 .kode-banner .kode-caption{
 	position:absolute;
-	left:0px;
+	left:0;
 	width:100%;
-	top:40%;
+	top:25%;
 	text-align:center;
 	z-index:200;
 }
@@ -1824,7 +1824,6 @@ footer{
 	padding: 10px;
 	background-color:#2a2a2a;
 	border-top:solid 3px #f05a23;
-	margin-top: 27%;
 }
 .banner-searchs h2{
 	font-size:18px;
@@ -3303,7 +3302,7 @@ blockquote{
 	bottom:14px;
 	width:150px;
 	height:1px;
-	background-color:#CCC;
+	background-color:#f05a23;
 }
 .section-heading-1 .kode-icon:after{
 	left:auto;

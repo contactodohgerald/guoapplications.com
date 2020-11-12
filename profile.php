@@ -14,7 +14,7 @@ if (!isset($_SESSION['api_Token'])){
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>User Profile</h2>
+            <h2>My Profile</h2>
            <!--
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
@@ -22,8 +22,8 @@ if (!isset($_SESSION['api_Token'])){
                 <li class="active">User Profile</li>
             </ol>-->
         </div>
-        <?php require_once ("downloadAppHold.php")?>
     </div>
+<?php require_once ("downloadAppHold.php")?>
     <!--CONTENT START-->
     <div class="kode-content">
         <!--AUTHOR DETAIL SECTION START-->
@@ -45,23 +45,23 @@ if (!isset($_SESSION['api_Token'])){
                             <div class="col-12">
                                 <table>
                                     <tr>
-                                        <td><i class="fa fa-phone" style="color: #2d3092"></i></td>
-                                        <td style="color: #2d3092">My Phone:</td>
+                                        <td><i class="fa fa-phone" style="color: #f05a23"></i></td>
+                                        <td style="color: #f05a23">My Phone:</td>
                                         <td><?php echo $response->phone?></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa fa-envelope-o"  style="color: #2d3092"></i></td>
-                                        <td style="color: #2d3092">My Email:</td>
+                                        <td><i class="fa fa-envelope-o"  style="color: #f05a23"></i></td>
+                                        <td style="color: #f05a23">My Email:</td>
                                         <td><?php echo $response->email?></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa fa-fax"  style="color: #2d3092"></i></td>
-                                        <td style="color: #2d3092">My Country:</td>
+                                        <td><i class="fa fa-fax"  style="color: #f05a23"></i></td>
+                                        <td style="color: #f05a23">My Country:</td>
                                         <td><?php echo $response->country?></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa fa-check"  style="color: #2d3092"></i></td>
-                                        <td style="color: #2d3092">Joined Since:</td>
+                                        <td><i class="fa fa-check"  style="color: #f05a23"></i></td>
+                                        <td style="color: #f05a23">Joined Since:</td>
                                         <td><?php echo date("d-m-Y", strtotime($response->created_at))?></td>
                                     </tr>
                                 </table>

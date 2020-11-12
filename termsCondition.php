@@ -12,8 +12,8 @@
             <li class="active">Terms & Condition</li>
         </ol>-->
     </div>
-    <?php require_once ("downloadAppHold.php")?>
 </div>
+<?php require_once ("downloadAppHold.php")?>
 <!--CONTENT START-->
 <div class="kode-content">
     <!--TERMS & CONDITION SECTION START-->
