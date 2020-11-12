@@ -6,7 +6,7 @@
             <div class="col-md-4">
                 <div class="widget widget-text">
                     <h2 class="text-center">Contact Us</h2>
-                    <p> <?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience</p>
+                    <p> <span style="color: #f05a23"><?php print  @$siteName?></span> is here to make learning a breeze by letting you learn at your convenience</p>
                     <?php   foreach ($response_array->return_data as $responses){ ?>
                     <ul>
                         <li>
@@ -59,7 +59,7 @@
                             <a href="signUp">Sign Up</a>
                         </li>
                         <li>
-                            <a href="termsCondition">Terms & Condition</a>
+                            <a href="termsConditions">Terms & Conditions</a>
                         </li>
                         <li>
                             <a href="faq">FAQ</a>
@@ -72,7 +72,7 @@
             <div class="col-md-4">
                 <div class="widget widget-newletter">
                     <h2 class="text-center">Join Us</h2>
-                    <p>Join and Follow <?php print  @$siteName?> Today</p>
+                    <p>Join and Follow <span style="color: #f05a23"><?php print  @$siteName?></span> Today</p>
                     <div class="contact-info" >
                         <?php   foreach ($response_array->return_data as $responses){ ?>
                         <ul>
@@ -107,6 +107,6 @@
 </footer>
 <div class="copyrights">
     <div class="container">
-        <p class="font-13"> © All Rights Reserved <?php $d=date('Y'); print $d;?> - Guo Applications Ltd</p>
+        <p class="font-13"> © All Rights Reserved <?php $d=date('Y'); print $d;?> - <?php print  @$siteName?> Applications Ltd</p>
     </div>
 </div>

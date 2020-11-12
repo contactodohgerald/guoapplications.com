@@ -23,8 +23,10 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h6>Please Provide Your Account Email To Continue!</h6>
                         <div class="row">
+                            <div class="col-md-12">
+                                <h6>Please Provide Your Account Email To Continue!</h6>
+                            </div>
                             <div class="col-md-12 form-group">
                                 <input  id="email" class="form-control email" type="email" placeholder="Email">
                                 <div class="err_email error_displayer"></div>

@@ -2,8 +2,8 @@
     <div class="container">
         <!--SECTION HEADING START-->
         <div class="section-heading-1 dark-sec">
-            <h2>Download <?php print  @$siteName?> & Enjoy</h2>
-            <p>You Are Logged In, Download <?php print  @$siteName?> App for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!
+            <h2>Download  <span style="color: #f05a23"><?php print  @$siteName?></span> & Enjoy</h2>
+            <p>You are signed in, Download  <span style="color: #f05a23"><?php print  @$siteName?></span> for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!
             </p>
             <div class="kode-icon"><i class="fa fa-book"  style="color: #f05a23"></i></div>
         </div>

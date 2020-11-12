@@ -5,7 +5,7 @@
 <!--BANNER START-->
 <div class="kode-inner-banner">
     <div class="kode-page-heading">
-        <h2>Terms & Condition</h2>
+        <h2>Terms & Conditions</h2>
        <!--
         <ol class="breadcrumb">
             <li><a href="./">Home</a></li>
@@ -53,7 +53,3 @@
 <?php require_once ("footer.php")?>
 
 <?php require_once ("e_script.php")?>
-
-<script>
-    getLoggedInUserDetails();
-</script>

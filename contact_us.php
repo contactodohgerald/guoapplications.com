@@ -151,7 +151,7 @@ if(isset($_POST['submit'])){
                     <!--LOCATION INFO START-->
                     <div class="kode-location">
                         <h5 class="text-uppercase">Contact Customer Care</h5>
-                        <p><?php print  @$siteName?> is here to make learning a breeze by letting you learn at your convenience.</p>
+                        <p><span style="color: #f05a23"><?php print  @$siteName?></span> is here to make learning a breeze by letting you learn at your convenience.</p>
                     </div>
                     <!--LOCATION INFO END-->
                     <div class="contact-info">

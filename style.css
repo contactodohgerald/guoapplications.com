@@ -1601,6 +1601,7 @@ footer{
 	top: 0;
 	left: 0;
 	height: 100%;
+	margin-top: 0!important;
 }
 .kode-page-heading h2{
 	font-size:24px;

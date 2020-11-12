@@ -23,8 +23,10 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <h5 class="text-uppercase">Create A New Password</h5>
                         <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="text-uppercase">Create A New Password</h5>
+                            </div>
                             <div class="col-md-12 form-group">
                                 <input  id="password_" class="form-control password" type="password" placeholder="Password">
                                 <span toggle="#password-field" class="fa fa-lg fa-eye field-icon Password" onclick="NeededModules.togglePassword('password_', 'Password')"></span>

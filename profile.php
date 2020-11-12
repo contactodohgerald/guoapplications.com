@@ -39,7 +39,7 @@ if (!isset($_SESSION['api_Token'])){
                     </a>
                 </div>
                 <div class="kode-text">
-                    <h2><?php echo $response->first_name?> <?php echo $response->last_name?>    <a class="modal-trigger" href="#modal13"><button class="btn guoBtn pull-right">Edit Profile</button></a></h2>
+                    <h4 style="font-size: 24px; font-weight: bold; margin-bottom: 5px" class="text-uppercase"><?php echo $response->first_name?> <?php echo $response->last_name?> <a class="modal-trigger" href="#modal13"><button class="btn guoBtn pull-right">Edit Profile</button></a></h4>
                     <div class="contact-box">
                         <div class="row">
                             <div class="col-12">

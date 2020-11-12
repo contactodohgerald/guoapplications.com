@@ -45,8 +45,8 @@ curl_close($curl)
             <?php   foreach ($response_array->return_data as $responses){ ?>
             <div class="row" style="margin-bottom: 0">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h2 class="text-center" >Download <?php print  @$siteName?> and open the doors of fun and knowledge</h2>
-                    <h2 style="color: #ffffff; font-size: 13px;text-transform: capitalize; margin-top: 3px " class="text-center">Visit Google PlayStore or Apple App Store to download <?php print  @$siteName?> </h2>
+                    <h2 class="text-center" >Download <span style="color: #f05a23"><?php print  @$siteName?></span> and open the doors of fun and knowledge</h2>
+                    <h2 style="color: #ffffff; font-size: 13px;text-transform: capitalize; margin-top: 3px " class="text-center">Visit Google PlayStore or Apple App Store to download <span style="color: #f05a23"><?php print  @$siteName?></span> </h2>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <a href="<?php echo $responses->playStoreUrl?>">
@@ -71,29 +71,29 @@ curl_close($curl)
                 <!--SECTION CONTENT START-->
                 <div class="section-content">
                     <h2>Getting Started With <span><?php print @$siteName?> </span></h2>
-                    <p> Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make <?php print @$siteName?> your gateway to it all and have fun doing so.</p>
+                    <p> Are you reading for fun or for an exam you want to pass with flying colors? Or maybe, just to acquire knowledge. Make <span style="color: #f05a23"><?php print  @$siteName?></span> your gateway to it all and have fun doing so.</p>
                 </div>
                 <!--SECTION CONTENT END-->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-gift"></i>
-                            <h3><a href="#">Download <?php print @$siteName?></a></h3>
-                            <p>Visit Google PlayStore or Apple App Store to download and install <?php print @$siteName?> to your device. </p>
+                            <h3><a href="#">Download <span style="color: #f05a23"><?php print  @$siteName?></span></a></h3>
+                            <p>Visit Google PlayStore or Apple App Store to download and install <span style="color: #f05a23"><?php print  @$siteName?></span> to your device. </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-book"></i>
                             <h3><a href="#">Sign Up</a></h3>
-                            <p>Sign up with <?php print @$siteName?> in just a few clicks and navigate our smart, user-friendly features.</p>
+                            <p>Sign up with <span style="color: #f05a23"><?php print  @$siteName?></span> in just a few clicks and navigate our smart, user-friendly features.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-calculator"></i>
-                            <h3><a href="#">Enjoy <?php print @$siteName?></a></h3>
-                            <p>Enjoy the numerous textbooks, exam materials and fun books in <?php print @$siteName?> that will blow your mind!</p>
+                            <h3><a href="#">Enjoy <span style="color: #f05a23"><?php print  @$siteName?></span></a></h3>
+                            <p>Enjoy the numerous textbooks, exam materials and fun books in <span style="color: #f05a23"><?php print  @$siteName?></span> that will blow your mind!</p>
                         </div>
                     </div>
                 </div>
@@ -128,8 +128,8 @@ curl_close($curl)
         <section class="kode-package-section">
             <div class="container">
                 <div class="section-content">
-                    <h2>Download  <span><?php print  @$siteName?> </span>And Enjoy</h2>
-                    <p>Download <?php print  @$siteName?> for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
+                    <h2>Download  <span style="color: #f05a23"><?php print  @$siteName?></span> And Enjoy</h2>
+                    <p>Download <span style="color: #f05a23"><?php print  @$siteName?></span> for free today and begin this life changing experience that lets you listen and learn anytime, anywhere!</p>
                 </div>
                 <?php   foreach ($response_array->return_data as $responses){ ?>
                 <div class="row">
