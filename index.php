@@ -46,14 +46,14 @@ curl_close($curl)
             <div class="row" style="margin-bottom: 0">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <h2 class="text-center" >Download <span style="color: #f05a23"><?php print  @$siteName?></span> and open the doors of fun and knowledge</h2>
-                    <h2 style="color: #ffffff; font-size: 13px;text-transform: capitalize; margin-top: 3px " class="text-center">Visit Google PlayStore or Apple App Store to download <span style="color: #f05a23"><?php print  @$siteName?></span> </h2>
+                    <h2 style="color: #ffffff; font-size: 13px;text-transform: capitalize; margin-top: 3px; margin-bottom: 0 " class="text-center">Visit Google PlayStore or Apple App Store to download <span style="color: #f05a23"><?php print  @$siteName?></span> </h2>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-3 col-sm-6 col-xs-6 " style="margin-top: 5px">
                     <a href="<?php echo $responses->playStoreUrl?>">
                         <img src="images/stores/coming-soon_playstore.png" alt="<?php print  @$siteName?>" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-3 col-sm-6 col-xs-6"  style="margin-top: 5px">
                     <a href="<?php echo $responses->appleStoreUrl?>">
                         <img src="images/stores/coming_soon_apple.png" alt="<?php print  @$siteName?>" class="img-responsive">
                     </a>

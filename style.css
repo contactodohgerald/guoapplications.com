@@ -6630,7 +6630,8 @@ section .kd-tab-2{margin-bottom:30px;float:left;width:100%;}
 	width: 250px; height: 250px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 5px solid #f05a23;
 }
 .kode-thumb .user_image_holder img{
-	height: 100%; width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 .loggedInUserHolder{
 	float:left; width: 100px; height: 30px; display: inline-block;
@@ -6645,7 +6646,8 @@ section .kd-tab-2{margin-bottom:30px;float:left;width:100%;}
 	width: 30%; height: 100%; float: left; border-radius: 50%; overflow: hidden;
 }
 .loggedInUser img{
-	height: 100%; width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 .kode-thumb button{
 	width: 300px; height: auto; margin: 0 auto;

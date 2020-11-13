@@ -62,7 +62,7 @@ if (!isset($_SESSION['api_Token'])){
                                     <tr>
                                         <td><i class="fa fa-check"  style="color: #f05a23"></i></td>
                                         <td style="color: #f05a23">Joined Since:</td>
-                                        <td><?php echo date("d-m-Y", strtotime($response->created_at))?></td>
+                                        <td><?php $timestamp = $response->created_at; echo date("F jS, Y", strtotime($timestamp));?></td>
                                     </tr>
                                 </table>
                             </div>
