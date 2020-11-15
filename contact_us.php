@@ -91,6 +91,7 @@ if(isset($_POST['submit'])){
 <?php require_once ("header_2.php")?>
     <!--BANNER START-->
     <div class="kode-inner-banner">
+        <img src="images/banner-2.jpg" alt="banner">
         <div class="kode-page-heading">
             <h2>Contact Us</h2>
            <!--

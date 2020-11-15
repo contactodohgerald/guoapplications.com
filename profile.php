@@ -14,6 +14,9 @@ if (!isset($_SESSION['api_Token'])){
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
+            <?php   foreach ($response_array->return_data as $responses){?>
+                <img src="<?php echo $response_array->image_path.$responses->profile_page?>" alt="banner">
+            <?php } ?>
             <h2>My Profile</h2>
            <!--
             <ol class="breadcrumb">

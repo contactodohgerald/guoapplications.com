@@ -1547,10 +1547,10 @@ footer{
 .kode-inner-banner{
 	float:left;
 	width:100%;
-	background-image:url(images/banner-2.jpg);
-	background-size:cover;
 	position: relative;
 	height: 380px;
+
+	overflow: hidden;
 
 }
 

@@ -2,7 +2,7 @@
 
 <style>
     .comment-form label{
-        position: relative !important;
+        position: relative 3m!important;
         width: 100% !important;
     }
 </style>
@@ -13,6 +13,9 @@
 <?php require_once ("loader.php")?>
 
     <div class="kode-inner-banner">
+        <?php   foreach ($response_array->return_data as $responses){?>
+            <img src="<?php echo $response_array->image_path.$responses->signUp_page?>" alt="banner">
+        <?php } ?>
         <div class="kode-page-heading">
             <h2>Sign Up</h2>
             <!--

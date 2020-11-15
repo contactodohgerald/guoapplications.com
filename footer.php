@@ -107,6 +107,6 @@
 </footer>
 <div class="copyrights">
     <div class="container">
-        <p class="font-13"> © All Rights Reserved <?php $d=date('Y'); print $d;?> - <?php print  @$siteName?> Applications Ltd</p>
+        <p class="font-13"> © All Rights Reserved <?php $d=date('Y'); print $d;?> - Guo Applications Ltd</p>
     </div>
 </div>

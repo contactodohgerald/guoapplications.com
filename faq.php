@@ -20,6 +20,7 @@ curl_close($curl)
 
 <!--BANNER START-->
 <div class="kode-inner-banner">
+    <img src="images/banner-2.jpg" alt="banner">
     <div class="kode-page-heading">
         <h2>FAQ</h2>
        <!--

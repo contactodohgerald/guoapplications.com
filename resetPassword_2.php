@@ -3,6 +3,9 @@
 <?php require_once ("header_2.php")?>
     <!--BANNER START-->
     <div class="kode-inner-banner">
+        <?php   foreach ($response_array->return_data as $responses){?>
+            <img src="<?php echo $response_array->image_path.$responses->resetPassword_2_page?>" alt="banner">
+        <?php } ?>
         <div class="kode-page-heading">
             <h2>Verify Token</h2>
           <!--

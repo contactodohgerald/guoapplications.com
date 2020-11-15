@@ -4,6 +4,7 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
+            <img src="images/banner-2.jpg" alt="banner">
             <h2>Verify Email</h2>
           <!--
             <ol class="breadcrumb">

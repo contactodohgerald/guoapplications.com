@@ -4,6 +4,9 @@
 
     <!--BANNER START-->
     <div class="kode-inner-banner">
+        <?php   foreach ($response_array->return_data as $responses){?>
+            <img src=" <?php echo $response_array->image_path.$responses->about_us_page?>" alt="banner">
+        <?php } ?>
         <div class="kode-page-heading">
             <h2>About Us</h2>
             <!-- <ol class="breadcrumb">
