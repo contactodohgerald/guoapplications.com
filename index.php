@@ -8,7 +8,7 @@ $curl = curl_init();
 
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'https://guo.guoapplications.com/api/getAllSlideImages',
+    CURLOPT_URL => 'http://guo.guoapplications.com/api/getAllSlideImages',
     CURLOPT_USERAGENT => 'Get About Us Details',
 
 ]);
@@ -78,22 +78,22 @@ curl_close($curl)
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-gift"></i>
-                            <h3><a href="#">Download <span style="color: #f05a23"><?php print  @$siteName?></span></a></h3>
-                            <p>Visit Google PlayStore or Apple App Store to download and install <span style="color: #f05a23"><?php print  @$siteName?></span> to your device. </p>
+                            <h3><a href="#">Download <span><?php print  @$siteName?></span></a></h3>
+                            <p>Visit Google PlayStore or Apple App Store to download and install <span><?php print  @$siteName?></span> to your device. </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-book"></i>
-                            <h3><a href="#">Sign Up</a></h3>
-                            <p>Sign up with <span style="color: #f05a23"><?php print  @$siteName?></span> in just a few clicks and navigate our smart, user-friendly features.</p>
+                            <h3><a href="signUp.php">Sign Up</a></h3>
+                            <p>Sign up with <span><?php print  @$siteName?></span> in just a few clicks and navigate our smart, user-friendly features.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="kode-service orangeText">
                             <i class="fa fa-calculator"></i>
-                            <h3><a href="#">Enjoy <span style="color: #f05a23"><?php print  @$siteName?></span></a></h3>
-                            <p>Enjoy the numerous textbooks, exam materials and fun books in <span style="color: #f05a23"><?php print  @$siteName?></span> that will blow your mind!</p>
+                            <h3><a href="signIn">Enjoy <span><?php print  @$siteName?></span></a></h3>
+                            <p>Enjoy the numerous textbooks, exam materials and fun books in <span><?php print  @$siteName?></span> that will blow your mind!</p>
                         </div>
                     </div>
                 </div>
@@ -106,19 +106,19 @@ curl_close($curl)
                 <div class="row">
                     <div class="col-md-4">
                         <div class="count-up">
-                            <span class="counter circle">15</span>
+                            <span class="counter circle"><?php echo $slideImage->book_count?></span>
                             <p>TOTAL BOOKS </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="count-up">
-                            <span class="counter circle">589</span>
+                            <span class="counter circle"><?php echo $slideImage->user_count?></span>
                             <p>TOTAL DOWNLOADS </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="count-up">
-                            <span class="counter circle">125</span>
+                            <span class="counter circle"><?php echo $slideImage->author_count?></span>
                             <p>TOTAL AUTHORS</p>
                         </div>
                     </div>

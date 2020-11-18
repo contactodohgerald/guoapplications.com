@@ -1554,6 +1554,11 @@ footer{
 
 }
 
+.kode-inner-banner img{
+	max-width: 100%;
+	width: auto;
+}
+
 .layer {
 	background-color:rgba(0,0,0,0.6);
 	position: absolute;
@@ -6624,6 +6629,21 @@ section .kd-tab-2{margin-bottom:30px;float:left;width:100%;}
 }
 .fonts-10{
 	font-size: 10px;
+}
+
+.kode-service h3 span{
+	color: #f05a23;
+}
+.kode-service:hover h3 span{
+	color: #ffffff;
+}
+
+.kode-service p span{
+	color: #f05a23;
+}
+
+.kode-service:hover p span{
+	color: #ffffff;
 }
 
 .kode-thumb .user_image_holder{
