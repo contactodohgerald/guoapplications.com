@@ -1,5 +1,12 @@
 <?php require_once ("head.php")?>
 
+<style>
+    #images img{
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
 <?php require_once ("header_2.php")?>
 
     <!--BANNER START-->
@@ -30,7 +37,7 @@
                 <!--SECTION CONTENT END-->
                 <div class="book-guide">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5" id="images">
                             <img src="images/mockUp/guo_app.png" alt="<?php print  @$siteName?>">
                         </div>
                         <div class="col-md-7">

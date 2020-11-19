@@ -2,7 +2,7 @@
 
 <style>
     .comment-form label{
-        position: relative 3m!important;
+        position: relative !important;
         width: 100% !important;
     }
 </style>
