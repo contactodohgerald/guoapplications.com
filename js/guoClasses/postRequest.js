@@ -43,15 +43,15 @@ async function registerUser() {
 
     if (phone.charAt(0) == 0){
         Phone = phone.substring(1);
-        code = `${phoneCode}${Phone}`;
+        code = `${Phone}`;
     }else {
-        code = `${phoneCode}${phone}`;
+        code = `${phone}`;
     }
 
     grecaptcha.execute();
     NeededModules.disableButton();
     let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/register',
-        {first_name:firstName, last_name:lastName, phone:code, country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, referred_unique_id:referred_unique_id, user_type:adminType}
+        {first_name:firstName, last_name:lastName, phone:code, country_code:phoneCode,  country:countryCode, email:email, password:password, password_confirmation:passwordConfirmation, referred_unique_id:referred_unique_id, user_type:adminType}
         );
     let {status, error_statement, success_message} = thePostData;
 
@@ -206,14 +206,14 @@ async function updateUser() {
 
     if (phone.charAt(0) == 0){
         Phone = phone.substring(1);
-        code = `${phoneCode}${Phone}`;
-    }else if (phone.charAt(0) === '+') {
-        code = `${phone}`;
+        code = `${Phone}`;
     }else {
-        code = `${phoneCode}${phone}`;
+        code = `${phone}`;
     }
 
-    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/updateUserProfile/'+user_unique_id, {first_name:firstName, last_name:lastName, phone:code, country:countryCode, gender:gender, city:city, address:address, token:api_token});
+    let thePostData = await NeededModules.postRequest(Routes.baseUrl+'/api/updateUserProfile/'+user_unique_id,
+        {first_name:firstName, last_name:lastName, phone:code, country_code:phoneCode, country:countryCode, gender:gender, city:city, address:address, token:api_token}
+        );
     let {status, error_statement, success_message} = thePostData;
 
     if (status === false) {

@@ -27,7 +27,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <!--CONTACT FORM START-->
                     <div class="comment-form">
-                        <p class="alert alert-danger">A reset password token have been sent to your email. Please provide token to continue. didn't see token? check your Junk / Spam folder</p>
+                        <p class="alert alert-danger">A reset password token has been sent to your email. Please provide token to continue. Didn't see token? Check your Junk / Spam folder</p>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input  id="token" class="form-control email_token" type="number" placeholder="Token">

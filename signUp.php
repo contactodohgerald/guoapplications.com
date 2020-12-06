@@ -38,7 +38,7 @@
                         <h5 class="text-uppercase">Sign Up</h5>
                         <div class="">
                             <div class="form-group" >
-                                <input  id="referral_id" class="form-control referred_unique_id" type="text" placeholder="Referral Code (Optional)" style="margin-bottom: 8px">
+                                <input  id="referral_id" class="form-control referred_unique_id" value="<?php if(isset($_GET['referralCode'])){ echo $_GET['referralCode'];}?>" type="text" placeholder="Referral Code (Optional)" style="margin-bottom: 8px">
                                 <div class="err_referred_unique_id error_displayer"></div>
                             </div>
                             <div class="form-group" >
