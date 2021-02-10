@@ -8,7 +8,7 @@ $curl = curl_init();
 
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://guo.guoapplications.com/api/getAllSlideImages',
+    CURLOPT_URL => 'https://guo.guoapplications.com/api/getAllSlideImages',
     CURLOPT_USERAGENT => 'Get About Us Details',
 
 ]);

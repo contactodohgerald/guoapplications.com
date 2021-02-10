@@ -30,14 +30,14 @@
                         <p class="alert alert-danger">A reset password token has been sent to your email. Please provide token to continue. Didn't see token? Check your Junk / Spam folder</p>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <input  id="token" class="form-control email_token" type="number" placeholder="Token">
+                                <input  id="token" class="form-control email_token" type="number" placeholder="Input Token From Email">
                                 <div class="err_email_token error_displayer"></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="resetPassword_2()">Verify Token</button>
+                                <button class="guoBtn" type="submit" onclick="resetPasswordHandler_2(this)">Verify Token</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h6>Didn't Get Token? <button class="guoBtn"  id="guoBtn" type="submit" onclick="resendTokenForPassword()">Resend</button></h6>
+                                <h6>Didn't Get Token? <button class="guoBtn"  id="guoBtn" type="submit" onclick="resendTokenForPasswordHandler(this)">Resend</button></h6>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 
 $_SESSION['api_Token'] = trim($_POST['api_token']);

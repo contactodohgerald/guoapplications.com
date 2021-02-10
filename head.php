@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 
 $siteName = 'GỤỌ';
@@ -16,7 +17,7 @@ $curl = curl_init();
 
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://guo.guoapplications.com/api/getAllSettings',
+    CURLOPT_URL => 'https://guo.guoapplications.com/api/getAllSettings',
     CURLOPT_USERAGENT => 'Get About Us Details',
 
 ]);
@@ -34,7 +35,7 @@ $curl = curl_init();
 
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://guo.guoapplications.com/api/getMobileUserDetails?token='.(isset($_SESSION['api_Token'])?$_SESSION['api_Token']:''),
+    CURLOPT_URL => 'https://guo.guoapplications.com/api/getMobileUserDetails?token='.(isset($_SESSION['api_Token'])?$_SESSION['api_Token']:''),
     CURLOPT_USERAGENT => 'Get About Us Details',
 
 ]);
@@ -42,6 +43,7 @@ curl_setopt_array($curl, [
 $loggedInUserDetails = curl_exec($curl);
 
 $loggedInUserDetails_array = json_decode($loggedInUserDetails);
+
 
 curl_close($curl)
 ?>

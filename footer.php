@@ -62,6 +62,9 @@
                             <a href="termsConditions">Terms & Conditions</a>
                         </li>
                         <li>
+                            <a href="privacyPolicy">Privacy Policy</a>
+                        </li>
+                        <li>
                             <a href="faq">FAQ</a>
                         </li>
                     </ul>

@@ -1,4 +1,4 @@
-
+<?php ob_start(); ?>
 <?php require_once ("head.php")?>
 
 <?php
@@ -351,7 +351,7 @@ if (!isset($_SESSION['api_Token'])){
         </div>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="guoBtn" onclick="updateUser()">Update Profile</button>
+        <button type="button" class="btn btn-primary" id="guoBtn" onclick="updateUserHandler(this)">Update Profile</button>
         <button class="btn modal-close">Cancel</button>
     </div>
 </div>

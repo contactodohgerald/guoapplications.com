@@ -51,7 +51,7 @@
                                 <h6>Forgot Password? <b><a href="./resetPassword_1">Reset</a></b> </h6>
                             </div>
                             <div class="form-group">
-                                <button class="guoBtn" id="guoBtn" type="submit" onclick="loginUser()">Sign In</button>
+                                <button class="guoBtn" id="guoBtn" type="submit" onclick="loginUserHandler(this)">Sign In</button>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
             <img src="<?php echo $response_array->image_path.$responses->verify_email_page?>" alt="banner">
         <?php } ?>
         <div class="kode-page-heading">
-            <h2>Email Token</h2>
+            <h2>Input Token From Email</h2>
           <!--  
             <ol class="breadcrumb">
                 <li><a href="./">Home</a></li>
@@ -28,17 +28,17 @@
                     <div class="comment-form">
                         <div class="row">
                             <div class="col-md-12">
-                                <h4>Email Token</h4>
+                                <h4> Input Token From Email</h4>
                             </div>
                             <div class="col-md-12 form-group">
                                 <input  id="token" class="form-control email_token" type="number" placeholder="Token">
                                 <div class="err_email_token error_displayer"></div>
                             </div>
                             <div class="col-md-12">
-                                <button class="guoBtn" type="submit" onclick="verifyEmails()">Verify Email</button>
+                                <button class="guoBtn" type="submit" onclick="verifyEmailHandler(this)">Verify Email</button>
                             </div>
                             <div class="col-md-12" style="margin-top: 10px">
-                                <h5>Didn't Get Token? <button class="guoBtn" id="guoBtn" type="submit" onclick="resendToken()">Resend Token</button></h5>
+                                <h5>Didn't Get Token? <button class="guoBtn" id="guoBtn" type="submit" onclick="resendTokenHandler(this)">Resend Token</button></h5>
                             </div>
                         </div>
                     </div>

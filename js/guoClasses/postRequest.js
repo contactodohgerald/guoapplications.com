@@ -2,10 +2,6 @@ function onSubmit(token) {
     console.log(token);
 }
 
-function onLoad() {
-    registerUser();
-}
-
 async function registerUser() {
 
     let firstName, lastName, email, adminType, phone, country, password, passwordConfirmation, Phone, code, referred_unique_id;
@@ -124,7 +120,7 @@ async function resendToken(){
     }
 }
 
-async function loginUser(){
+/*async function loginUser(){
     let email, password;
 
     email = $('.email').val();
@@ -171,7 +167,7 @@ async function loginUser(){
             }, 2000)
         }
     }
-}
+}*/
 
 //handles the user's / admin's profile details
 async function updateUser() {
